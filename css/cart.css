@@ -1,0 +1,127 @@
+#left-content {
+    width: 60%;
+    min-height: 500px;
+    float: left;
+    margin: 50px 0px;
+    border: solid 1px black;
+}
+
+#right-content {
+    width: 30%;
+    min-height: 500px;
+    float: left;
+    background-color: #eee;
+    margin: 30px 0px;
+    padding: 20px;
+}
+
+#left-content h3 {
+    background-color: #EEE;
+    padding: 15px;
+    line-height: 48px;
+    margin: 0px;
+}
+
+#left-content table {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#left-content th,
+td {
+    border-bottom: 1px solid #ccc;
+}
+
+#left-content th {
+    border-top: 1px solid #ccc;
+}
+
+.cart-item-img {
+    width: 100px;
+}
+
+#left-content td:nth-child(1) {
+    text-align: center;
+}
+
+#left-content td:nth-child(4),
+td:nth-child(6) {
+    text-align: center;
+    color: red;
+}
+
+#left-content td:nth-child(5) input[type='text'] {
+    text-align: center;
+    line-height: 24px;
+    width: 40px;
+    margin-left: -6px;
+}
+
+#left-content td:nth-child(5) input[type='button'] {
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    margin-left: -6px;
+}
+
+#left-content td:nth-child(5) {
+    padding-left: 15px;
+}
+
+#left-content td:nth-child(7) img {
+    cursor: pointer;
+}
+
+#delivery-to,
+#coupon,
+#payment {
+    width: 100%;
+    min-height: 150px;
+    background-color: #FFF;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+#payment span {
+    color: red;
+    float: right;
+}
+
+#payment input {
+    color: #FFF;
+    background-color: red;
+    width: 100%;
+    height: 36px;
+    border: 0;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 15px;
+}
+
+#payment input:hover {
+    opacity: 1.0;
+}
+
+#payment-method,
+#delivery-method {
+    line-height: 28px;
+}
+
+#process input {
+    color: #FFF;
+    background-color: red;
+    width: 200px;
+    height: 36px;
+    border: 0;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+#process input:hover {
+    opacity: 1.0;
+}

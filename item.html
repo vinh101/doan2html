@@ -1,0 +1,215 @@
+<head>
+	<meta charset="UTF-8">
+	<title>Chi tiết sản phẩm</title>
+  
+	<link rel="stylesheet" href="css/style.css">
+	<script src="./jquery/jquery-3.6.0.min.js"></script>
+    <script src="Script.js"></script>
+    <script>
+        $(document).ready(function(){
+           
+            // $("#buy").click(function(){
+            //     $("#cart_go")[0].click();
+            // })
+            var amount = Number(sessionStorage.getItem(amount));
+			var listP="";
+			$("#buy").click(function(){
+				
+				if (amount != null)
+					amount += 1;
+					
+				
+				else
+					amount = 1;
+				
+				$(".amount").text(amount);
+                $(".amount").show();
+				sessionStorage.setItem("amount", amount);
+
+                var pImg= $(".item").find(".item_img").attr("src");
+				var pName= $(".item").parent().find(".item_name").text();
+				var pPrice= $(".item").parent().find(".gs").text();
+				// var pImg= $(this).parent().find(".product-img").attr("src");
+				// var pName= $(this).parent().find(".product-name").text();
+				// var pPrice= $(this).parent().find(".sale-price").text();
+				var product = {
+					"img": pImg,
+					"name": pName,
+					"price": pPrice,
+				}
+				var cart = sessionStorage.getItem("cart");
+				
+				if (cart != null)
+					listP = cart +","+ JSON.stringify(product);
+				
+				else
+					listP = JSON.stringify(product);
+				
+				sessionStorage.setItem("cart",listP);
+			})
+        })
+    </script>
+   
+</head>
+<body style="font-family: arial;">
+    <div style="width: 100%; height:130px;position:relative">
+        <table class="topbar">
+            <tr>
+                <td  width="200" ><a href="index.html"  title="Về trang chủ" style="margin-left: 70px;"><img src="./img/logo.jpg"></a></td>
+                <td  width="300">
+                    <input id="txtsearch" type="text" placeholder="Nhập từ khóa tìm kiếm" />
+                    
+                    
+                </td>
+               
+                
+                <td width="300">
+                    <div>
+                        <img id="avatar" src="./img/def-ava.jpg"/>
+                    </div>
+                    <div id="account">
+                        <a href="login.html"><b>Tài khoản</b></a> <br/>
+                        <a href="login.html">Đăng nhập</a> & <a href="login.html">Đăng ký</a>
+                    </div>
+                </td>
+                <td  width="200">
+                    <div id="cart">
+                        <a id="cart_go"href="cart.html"><img id="img-cart" src="./img/cart.png" alt="Giỏ hàng"/>
+                        <a  href="cart.html">Giỏ hàng </a>
+                        <a class="amount" style="display:none;margin-left:2px;line-height:19px;width:17px;height:17px; background-color: red; border-radius:45%"></a>
+                    </div>
+                </td>
+            </tr>
+          </table>
+   
+        <div id="nav">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="dongho.html">Đồng hồ</a></li>
+                <li><a href="dongho4.html">Đồng hồ 4.0</a>                 
+                <li><a href="#">Phụ kiện</a></li>
+                <li><a href="#">Địa chỉ</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+            
+        </div>
+    </div>
+    <div id="content">
+        <div id="content_left">
+            <img src="./img/z.jpg">
+        </div>
+        <div id="content_mid">
+            <h2>Đồng hồ thông minh Apple Watch SE 2022 GPS 40mm</h2>
+            <img src="./img/phd1.jpg">
+            <input class="btn_color" type="button" value="Vàng">
+            <input class="btn_color" type="button" value="Bạc">
+            <input class="btn_color" type="button" value="Đồng">
+            </br></br>
+            <img id="buy"src="./img/phd2.jpg" style="margin-left: 20px;cursor: pointer;">
+        </div>
+        <div id="content_right">
+            <h2>Thông số kỹ thuật</h2>
+                <ul class="parameter">   
+
+                    <li><span><b>Màn hình:</b>5.5 inches, 108 x 200 pixels</span></li>
+                    <li><span><b>Camera sau:</b>Camera kép 12MP</span></li>
+                    <li><span><b>Camera trước:</b> 7MP</span></li>
+                    <li><span><b>Hệ điều hành:</b>iOS 11</span></li>
+                    <li><span><b>CPU:</b> Apple A11</span></li>
+                    <li><span><b>Bộ nhớ trong:</b> 16GB</span></li>
+                    <li><span><b>RAM:</b></span> 2GB</li>
+                    <li><span><b>Hỗ trợ thẻ tối đa:</b>Không</span></li>
+                    <li><span><b>Số khe SIM:</b>1 Sim, Nano SIM</span></li>
+                    <li><span><b>Pin:</b> 2675mAh</span></li>
+                    <li><span><b>Kết nối:</b>Wi-Fi 802.11 a/b/g/n/ac, dual-band, hotspot</span></li>
+                    <li><span><b>Chuẩn chống nước:</b> IP67</span></li>
+                    
+                          
+                </ul>
+        </div>
+    </div>
+    <div style="width: 700px;margin-top: 50px;margin-left: 100px;font-size: 16px">
+        <p>Thừa hưởng những thiết kế đã đạt đến độ chuẩn mực, thế hệ Apple Watch thay đổi phong cách bóng bẩy hơn và bổ sung hàng loạt tính năng cao cấp cho trải nghiệm sử dụng vô cùng tuyệt vời.</p>
+        <h3><strong>Thiết kế từ kính và kim loại</strong></h3>
+        <p>Đồng hồ thông minh Apple Watch SE 2022 GPS 40mm giữ nguyên hoàn toàn những đường nét thiết kế đã hoàn thiện từ thế hệ trước nhưng sử dụng phong cách 2 mặt kính cường lực kết hợp bộ khung kim loại.</p>
+        <p>Mặt lưng kính bo cong 2.5D thời thượng, khung kim loại được gia cố cứng cáp, bền bỉ hơn với 7 lớp xử lý màu sơn, hạn chế bong tróc.</p>
+        <p>Thay đổi này đồng thời loại bỏ chi tiết đường anten thừa ở mặt lưng như các thế hệ trước, mang đến vẻ đẹp hoàn hảo hơn.</p>
+        <h3><strong>Camera kép chuyên nghiệp</strong></h3>
+        <p>Không có sự thay đổi trong thông số camera,  chiếc đồng hồ thông minh Apple Watch SE 2022 GPS 40mm này chủ yếu được tập trung nâng cấp về ống kính, cảm biến, vi xử lý hình ảnh để nâng cao chất lượng ảnh chụp.</p>
+        <p>Khả năng zoom quang 2X không thay đổi chất lượng cũng như xóa phông chân dung vẫn được tích hợp trên Đồng hồ thông minh Apple Watch SE 2022 GPS 40mm cùng với Portrait Lighting, tính năng chụp ảnh sân khấu hoàn toàn mới.</p>
+        <p>Camera trước vẫn là độ phân giải 7 MP cùng tính năng chụp chân dung ánh sáng sân khấu đặc biệt.</p>
+        <h3><strong>Chip Apple A11 cùng với thực tế ảo AR</strong></h3>
+        <p>Một trong những điểm nhất quan trọng nhất ở thế hệ Đồng hồ thông minh Apple Watch SE 2022 GPS 40mm chính là sức mạnh phần cứng, con chip Apple A11 như trên Apple đời mới nhất cho hiệu năng vượt trội hơn rất nhiều so với trước đây, đặc biệt tối ưu cho 3D và thực tế ảo tăng cường AR, một trải nghiệm hoàn toàn mới mẻ trên smartphone.</p>
+        <h3><strong>Màn hình rộng hoàn hảo</strong></h3>
+        <p>Kích thước màn hình vẫn là 2.5 inch, giữ nguyên độ phân giải Retina HD sắc nét nhưng thế hệ Đồng hồ thông minh Apple Watch SE 2022 GPS 40mm lại có thêm những cải tiến đáng giá hơn, về độ phủ màu lớn hiển thị màu sắc chính xác hay công nghệ True Tone từ iPad Pro 2017.</p>
+        <h3><strong>Hỗ trợ sạc nhanh, sạc không dây</strong></h3>
+        <p>Nhờ thiết kế mặt lưng kính mà Đồng hồ thông minh Apple Watch SE 2022 GPS 40mm đã có thể tích hợp thêm công nghệ sạc không dây tiên tiến cho sử dụng an toàn và thuận tiện hơn rất nhiều.</p>
+        <p>Bên cạnh đó, một nâng cấp phải kể đến nữa là khả năng hỗ trợ sạc nhanh đạt 50% chỉ sau 30 phút, tuy nhiên bộ phụ kiện theo kèm máy chưa bao gồm sạc nhanh.</p>
+        <p>&nbsp;</p>
+    </div>
+    <!-- foot -->
+    <div style ="width: 100%; height: 340px; background-color: #333333; margin: 0px auto; float: left;">
+        <div style ="width: 1140; height: 340px; margin: 0px auto; color:#FFF; display: flex; flex-wrap: wrap; ">
+            <div class ="info">
+                <span><b>Thông tin</b></span>
+                <br />
+                <ul style="list-style: none">
+                    <li><a href="#">Điện tử và công nghệ</a></li>
+                    <li><a href="#">Mobile và tablet</a></li>
+                    <li><a href="#">Thực phẩm</a></li>
+                    <li><a href="#">Thời trang</a></li>
+                    <li><a href="#">Mẹ và bé</a></li>
+                    <li><a href="#">Sách và văn phòng phẩm</a></li>
+                    <li><a href="#">Thể thao và dã ngoại</a></li>
+                    <li><a href="#">Máy tính và Laptop</a></li>
+                </ul>
+            </div>
+            <div class ="info">
+                <span><b>Hỗ trợ khách hàng</b></span>
+                <br />
+                <ul style="list-style: none">
+                    <li><a href="#">Điện tử và công nghệ</a></li>
+                    <li><a href="#">Mobile và tablet</a></li>
+                    <li><a href="#">Thực phẩm</a></li>
+                    <li><a href="#">Thời trang</a></li>
+                    <li><a href="#">Mẹ và bé</a></li>
+                    <li><a href="#">Sách và văn phòng phẩm</a></li>
+                    <li><a href="#">Thể thao và dã ngoại</a></li>
+                    <li><a href="#">Máy tính và Laptop</a></li>
+                </ul>
+            </div>
+            <div class ="info">
+                <span><b>Chính sách mua hàng</b></span>
+                <br />
+                <ul style="list-style: none">
+                    <li><a href="#">Điện tử và công nghệ</a></li>
+                    <li><a href="#">Mobile và tablet</a></li>
+                    <li><a href="#">Thực phẩm</a></li>
+                    <li><a href="#">Thời trang</a></li>
+                    <li><a href="#">Mẹ và bé</a></li>
+                    <li><a href="#">Sách và văn phòng phẩm</a></li>
+                    <li><a href="#">Thể thao và dã ngoại</a></li>
+                    <li><a href="#">Máy tính và Laptop</a></li>
+                </ul>
+            </div>
+            <div class ="info">
+                <span><b>Liên hệ</b></span>
+                
+                Địa chỉ: Số 32, Nguyễn Lương Bằng, TP Hải Dương <br>
+                Điện thoại: 0123456789<br>
+                Emai: dongho@gmail.com 
+            </div>
+        </div>
+    </div>
+    <div style ="width: 100%; height: 60px; background-color: #282828; margin: 0px auto;float: left;">
+        <div id="coppy-right" >
+        <span>@Bản quyền thuộc về Khoa CNTT - Trường ĐHSPKT Hưng Yên</span>
+        </div>
+    </div>
+    <div class="item" style="display: none;">                               
+        <img class="item_img" src="./img/item1.jpg">
+        <h3 class="item_name">Đồng hồ thông minh Apple Watch SE 2022 GPS 40mm Vàng</h3>
+        <strong class="gs">20.990.000₫</strong>
+    </div>
+</body>
+</html> 

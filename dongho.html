@@ -1,0 +1,290 @@
+<head>
+	<meta charset="UTF-8">
+	<title>Danh sách sản phẩm</title>
+  
+	<link rel="stylesheet" href="css/style.css">
+	<script src="./jquery/jquery-3.6.0.min.js"></script>
+    <script src="Script.js"></script>
+    <script>
+        $(document).ready(function(){
+           
+            $(".item").click(function(){
+                $("#tunnle")[0].click();
+            })
+            $(".menu_title").click(function(){
+                if ($(this).next().is(":hidden")){
+                    $(".menu_title").removeClass("selected");
+                    $(this).addClass("selected");
+                    $(".menu_title").next().slideUp();
+                    $(this).next().slideToggle();
+                    
+                }   
+                else{
+                    $(this).next().slideToggle();
+                }                   
+            })
+            $("#menu_box a").hover(function(){
+                $("#menu_box a").removeClass("selected")
+                $(this).addClass("selected");
+            } ,(function(){
+                $("#menu_box a").removeClass("selected");
+            })      
+        ,)})
+    </script>
+   
+</head>
+<body style="font-family: arial;">
+    <div style="width: 100%; height:130px;position:relative">
+        <table class="topbar">
+            <tr>
+                <td  width="200" ><a href="index.html"  title="Về trang chủ" style="margin-left: 70px;"><img src="./img/logo.jpg"></a></td>
+                <td  width="300">
+                    <input id="txtsearch" type="text" placeholder="Nhập từ khóa tìm kiếm" />
+                    
+                    
+                </td>
+               
+                
+                <td width="300">
+                    <div>
+                        <img id="avatar" src="./img/def-ava.jpg"/>
+                    </div>
+                    <div id="account">
+                        <a href="login.html"><b>Tài khoản</b></a> <br/>
+                        <a href="login.html">Đăng nhập</a> & <a href="login.html">Đăng ký</a>
+                    </div>
+                </td>
+                <td  width="200">
+                    <div id="cart">
+                        <a href="cart.html"><img id="img-cart" src="./img/cart.png" alt="Giỏ hàng"/>
+                        <a href="cart.html">Giỏ hàng </a>
+                    </div>
+                </td>
+            </tr>
+          </table>
+   
+        <div id="nav">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="dongho.html">Đồng hồ</a></li>
+                <li><a href="dongho4.html">Đồng hồ 4.0</a></li>                      
+                <li><a href="#">Phụ kiện</a></li>
+                <li><a href="#">Địa chỉ</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+            
+        </div>
+    </div>
+    <div id="content">
+        <div id="menu_box">
+            <ul id="menu">
+                <li>
+                    <a class="menu_title" href="#">ĐỒNG HỒ</a>
+                            <ul class="sub_menu">
+                              <li>
+                                <a href="dongho.html">Galaxy</a>
+                              </li>
+                              <li>
+                                <a href="dongho.html">Rolex</a>
+                              </li>
+                              <li>
+                                <a href="dongho.html">Luxury</a>
+                              </li>
+                              <li>
+                                <a href="dongho.html">A</a>
+                              </li>
+                              <li>
+                                <a href="dongho.html">Fixdex</a>
+                              </li>
+                              <li>
+                                <a href="dongho.html">Roblox</a>
+                              </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a class="menu_title" href="#">ĐỒNG HỒ 4.0</a>
+                            <ul class="sub_menu">
+                              <li>
+                                <a href="">Điện tử</a>
+                              </li>
+                              <li>
+                                <a href="">Cảm ứng</a>
+                              </li>
+                              
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="menu_title" href="#">PHỤ KIỆN</a>
+                            <ul class="sub_menu">
+                              <li>
+                                <a href="">Dây sạc</a>
+                              </li>
+                              <li>
+                                <a href="">Tai nghe</a>
+                              </li>
+                              <li>
+                                <a href="">Loa</a>
+                              </li>
+                              <li>
+                                <a href="">USB</a>
+                              </li>
+                              <li>
+                                <a href="">Khác</a>
+                              </li>                          
+                            </ul>
+                        </li>
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a class="menu_title" href="#">PHỤ KIỆN</a>
+                    <ul class="sub_menu">
+                      <li>
+                        <a href="">Dây sạc</a>
+                      </li>
+                      <li>
+                        <a href="">Tai nghe</a>
+                      </li>
+                      <li>
+                        <a href="">Loa</a>
+                      </li>
+                      <li>
+                        <a href="">USB</a>
+                      </li>
+                      <li>
+                        <a href="">Khác</a>
+                      </li>                          
+                    </ul>
+                </li>
+               
+            </ul>
+
+        </div>
+        <table style="width: 70%;float: left;">
+            <tr>
+                
+                <td>
+                    <div class="item">                               
+                        <img class="item_img" src="./img/item6.png">
+                        <h3>Đồng Hồ LuxyryA32</h3>
+                        <strong class="gs">19.999.000₫</strong>
+                    </div>
+                </td>
+                <td>
+                    <div class="item">                               
+                        <img class="item_img" src="./img/item7.jpg">
+                        <h3>Đồng Hồ Rolex9</h3>
+                        <strong class="gs">21.990.000₫</strong>
+                    </div>
+                </td>
+                <td>
+                    <div class="item">                               
+                        <img class="item_img" src="./img/item8.jpg">
+                        <h3>Đồng Hồ A9H</h3>
+                        <strong class="gs">10.990.000₫</strong>
+                    </div>
+                </td>
+                <td>
+                    <div class="item">                               
+                        <img class="item_img" src="./img/item10.png">
+                        <h3>Đồng Hồ A9</h3>
+                        <strong class="gs">11.111.000₫</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+               
+                <td>
+                    <div class="item">                               
+                        <img class="item_img" src="./img/item2.jpg">
+                        <h3>Đồng Hồ Galaxy8</h3>
+                        <strong class="gs">20.990.000₫</strong>
+                    </div>
+                </td>
+                <td>
+                    <div class="item">                               
+                        <img class="item_img" src="./img/item3.jpg">
+                        <h3>Đồng Hồ Số0</h3>
+                        <strong class="gs">11.111.000₫</strong>
+                    </div>
+                </td>
+                <td>
+                    <div class="item">                               
+                        <img class="item_img" src="./img/item4.jpg">
+                        <h3>Đồng Hồ G91</h3>
+                        <strong class="gs">20.990.000₫</strong>
+                    </div>
+                </td>
+                <td>
+                    <div class="item">                               
+                        <img class="item_img" src="./img/item5.jpg">
+                        <h3>Đồng Hồ Fixdex</h3>
+                        <strong class="gs">20.990.000₫</strong>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+   
+    <!-- foot -->
+    <div style ="width: 100%; height: 340px; background-color: #333333; margin: 0px auto; float: left;">
+        <div style ="width: 1140; height: 340px; margin: 0px auto; color:#FFF; display: flex; flex-wrap: wrap; ">
+            <div class ="info">
+                <span><b>Thông tin</b></span>
+                <br />
+                <ul style="list-style: none">
+                    <li><a href="#">Điện tử và công nghệ</a></li>
+                    <li><a href="#">Mobile và tablet</a></li>
+                    <li><a href="#">Thực phẩm</a></li>
+                    <li><a href="#">Thời trang</a></li>
+                    <li><a href="#">Mẹ và bé</a></li>
+                    <li><a href="#">Sách và văn phòng phẩm</a></li>
+                    <li><a href="#">Thể thao và dã ngoại</a></li>
+                    <li><a href="#">Máy tính và Laptop</a></li>
+                </ul>
+            </div>
+            <div class ="info">
+                <span><b>Hỗ trợ khách hàng</b></span>
+                <br />
+                <ul style="list-style: none">
+                    <li><a href="#">Điện tử và công nghệ</a></li>
+                    <li><a href="#">Mobile và tablet</a></li>
+                    <li><a href="#">Thực phẩm</a></li>
+                    <li><a href="#">Thời trang</a></li>
+                    <li><a href="#">Mẹ và bé</a></li>
+                    <li><a href="#">Sách và văn phòng phẩm</a></li>
+                    <li><a href="#">Thể thao và dã ngoại</a></li>
+                    <li><a href="#">Máy tính và Laptop</a></li>
+                </ul>
+            </div>
+            <div class ="info">
+                <span><b>Chính sách mua hàng</b></span>
+                <br />
+                <ul style="list-style: none">
+                    <li><a href="#">Điện tử và công nghệ</a></li>
+                    <li><a href="#">Mobile và tablet</a></li>
+                    <li><a href="#">Thực phẩm</a></li>
+                    <li><a href="#">Thời trang</a></li>
+                    <li><a href="#">Mẹ và bé</a></li>
+                    <li><a href="#">Sách và văn phòng phẩm</a></li>
+                    <li><a href="#">Thể thao và dã ngoại</a></li>
+                    <li><a id="tunnle" href="item.html">Máy tính và Laptop</a></li>
+                </ul>
+            </div>
+            <div class ="info">
+                <span><b>Liên hệ</b></span>
+                
+                Địa chỉ: Số 32, Nguyễn Lương Bằng, TP Hải Dương <br>
+                Điện thoại: 0123456789<br>
+                Emai: dongho@gmail.com 
+            </div>
+        </div>
+    </div>
+    <div style ="width: 100%; height: 60px; background-color: #282828; margin: 0px auto;float: left;">
+        <div id="coppy-right" >
+        <span>@Bản quyền thuộc về Khoa CNTT - Trường ĐHSPKT Hưng Yên</span>
+        </div>
+    </div>
+</body>
+</html> 
