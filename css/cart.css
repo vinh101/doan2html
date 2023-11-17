@@ -40,6 +40,7 @@ td {
 
 .cart-item-img {
     width: 100px;
+    border: "0";
 }
 
 #left-content td:nth-child(1) {
