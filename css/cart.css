@@ -40,7 +40,6 @@ td {
 
 .cart-item-img {
     width: 100px;
-    border: "0";
 }
 
 #left-content td:nth-child(1) {
@@ -56,14 +55,14 @@ td:nth-child(6) {
 #left-content td:nth-child(5) input[type='text'] {
     text-align: center;
     line-height: 24px;
-    width: 40px;
+    width: 17px;
     margin-left: -6px;
 }
 
 #left-content td:nth-child(5) input[type='button'] {
     text-align: center;
     height: 30px;
-    width: 30px;
+    width: 5px;
     margin-left: -6px;
 }
 
