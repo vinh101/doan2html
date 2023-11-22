@@ -22,6 +22,7 @@ td{
     color: white;
     height: 55px;
     border: none;
+    
 }
 #txtsearch {
 	border-radius: 5px;
@@ -99,6 +100,7 @@ td{
     line-height: 24px;
     width: 200px;
     border-collapse: collapse;
+    
     /* background-color: #3d8862; */
 }
 #menu li{
@@ -197,13 +199,14 @@ td{
     background-color: rgb(159, 112, 24);
     border-radius: 100%;
     margin: 13px auto;
-    
+    margin-left: 154px;
 	text-align: center;
 }
 .discount b{
     font-size: 18px;
     color: #DDD;
-    
+    margin-top: 9px;
+    float: left;
 }
 .item_img{
     width: 140px;
@@ -218,9 +221,10 @@ td{
    
 }
 .gs{
-    color:rgb(107, 54, 54);
-    text-align: center;
+   color:rgb(107, 54, 54);
+   text-align: center;
    
+  
 }
 #lower_body{
     width: 100%;
@@ -260,16 +264,34 @@ td{
 }
 
 
-#nav {
+.nav {
     height: 40px;
-    
-    width: 90%;
-    background-color: rgb(108, 103, 103);
+    transition: 2s;
+    width: 92%;
+    background-color: #35835f;
     border-radius: 5px;
     margin: auto;
     bottom: 0px;
     padding-left: 50px;
+    
 }
+
+.nav.codinh {
+    height: 50px;
+    transition: 2s;
+    position: fixed;
+    z-index: 1000;
+    top: -570;
+    left: 44;
+    float: left;
+    width: 88.5%;
+    background-color: #35835f;
+}
+
+.okeMau.mauUL{
+    background-color: #35835f;
+}
+
 #nav ul{
     margin: 15px auto;
     width: 100%;
@@ -290,10 +312,12 @@ td{
 }
 
 #nav ul li {
-    background-color: rgb(108, 103, 103);
+    /* background-color: rgb(108, 103, 103); */
     float: left;
     width: 15%;
     margin-top: 7px;
+    background-color: #35835f;
+
 }
 
 #nav ul li:hover ul {
