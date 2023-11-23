@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    width: 1140px;
+    margin: 0px auto;
+}
+
+#bottom{
+    margin-top: 2px;
+    border-top: 5px solid #BC3E36;
+}
+#left{
+    width: 20%;
+    float: left;
+    
+}
+   
+#ds > li{
+    display: block;
+    background-color: #3C80B5;
+    border: 1px solid #2F6695;
+    
+    
+}
+#ds > li >a, .dscon > li >a{
+    color: #fff;
+    padding-left: 10px;
+    display: block;
+    padding: 10px;
+
+}
+
+.dscon{
+    padding-left: 0px;
+}
+.dscon > li {
+    display: block;
+    background-color: #4A5059;
+    border: 1px solid #424650;
+}
+#right{
+    float: right;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 25px;
+    margin-top: 6px;
+}
+.omau{
+    width: 150px;
+    height: 130px;
+    background-color: lightblue;
+    float: left;
+    margin: 10px 0px;
+    display: flex;
+    position: relative;
+    
+}
+
+.tenxuong{
+    float: right;
+    margin-left: 10px;
+}
+#admin{
+    margin-left: 50px;
+    
+}
+#dangxuat{
+    color: #578AC6;
+    margin-left: 25px;
+    
+}
+
+#hethong{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.orange{
+    background-color: #F09436;
+}
+.cyan{
+    background-color: #4CA7AF;
+}
+.green{
+    background-color: #8BB938;
+}
+.blue{
+    background-color: #2F6DC4;
+}
+.red{
+    background-color: #B5362B;
+}
+
+
+#right i{
+    height: 16px;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+#right a{
+    width: 150px;
+    font-size: 11px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#top{
+    height: 70px;
+    width: 100%;
+    border-bottom: 5px solid #156BC7;
+    line-height: 70px;
+    position:relative;
+}
+#admin{
+    margin-left: 50px;
+    
+}
+#dangxuat{
+    color: #578AC6;
+    margin-left: 25px;
+    
+}
+
+#hethong{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 250px;
+    right:0px
+}
