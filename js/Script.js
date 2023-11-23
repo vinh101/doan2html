@@ -35,3 +35,4 @@ function back(){
 function autoplay(){
     setInterval(next,3000);
 }
+

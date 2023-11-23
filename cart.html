@@ -4,7 +4,7 @@
  <link rel="stylesheet" href="css/cart.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="./jquery/jquery-3.6.0.min.js"></script>
-    <script src="Script.js"></script>
+    <script src="js/Script.js"></script>
     <script>
             autoplay();
     </script>
@@ -66,7 +66,8 @@
 							</td>
 							<td class="tb-total">${data[i].price}</td>
 							<td>
-								<img width="28px" src="./img/delete.png"/>
+								<input id="chot" type="button" value="Xóa">
+								<!-- <img width="28px" text-align: center src="./img/delete.png"/> -->
 							</td>
 						</tr>
 								`;
@@ -171,8 +172,9 @@
 							<th>Đơn giá</th>
 							<th>Số lượng</th>
 							<th>Thành tiền</th>
-							<th>Xóa</th>
+							<th>Xóa</th>
 						</tr>
+						<!-- <tbody id='products-cart'></tbody> -->
 						<!-- <tr>
 							<td>1</td>
 							<td><a href="#"><img class="cart-item-img" src="./img/item1.jpg"/></a></td>
@@ -222,7 +224,7 @@
 							Phí vận chuyển <span>200.000</span>
 						</p>
 						<p>
-							Tổng tiền <span>34.700.000</span>
+							Tổng tiền <span id='total-money'>0</span>
 						</p>
 						<p>
 							<input id="chot" type="button" value="THANH TOÁN">
