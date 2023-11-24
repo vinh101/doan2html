@@ -66,7 +66,7 @@
 							</td>
 							<td class="tb-total">${data[i].price}</td>
 							<td>
-								<input id="chot" type="button" value="Xóa">
+								<input id="cl" type="button" value="Xóa">
 								<!-- <img width="28px" text-align: center src="./img/delete.png"/> -->
 							</td>
 						</tr>
@@ -112,6 +112,11 @@
                 sessionStorage.clear();
                 location.reload();
             })
+			$("#cl").click(function(){
+                sessionStorage.clear();
+				location.reload();
+                
+            })
         })
     </script>
     
@@ -153,8 +158,8 @@
                     <li><a href="dongho.html">Đồng hồ</a></li>
                     <li><a href="dongho4.html">Đồng hồ 4.0</a>                 
                     <li><a href="#">Phụ kiện</a></li>
-                    <li><a href="#">Địa chỉ</a></li>
-                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="diachi.html">Địa chỉ</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
                 </ul>
                 
             </div>
