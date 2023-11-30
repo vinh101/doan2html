@@ -1,0 +1,448 @@
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tin tức</title>
+    <LINK REL="SHORTCUT ICON"  HREF="./img/hai.png">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/new.css">
+
+        <script src="./jquery/jquery-3.6.0.min.js"></script>
+        <script src="https://kit.fontawesome.com/e06076012c.js" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+        
+    
+    <!-- <script>
+        $(document).ready(function(){
+           
+            $(".item").click(function(){
+                $("#tunnle")[0].click();
+            })
+            $(".menu_title").click(function(){
+                if ($(this).next().is(":hidden")){
+                    $(".menu_title").removeClass("selected");
+                    $(this).addClass("selected");
+                    $(".menu_title").next().slideUp();
+                    $(this).next().slideToggle();
+                    
+                }   
+                else{
+                    $(this).next().slideToggle();
+                }                   
+            })
+            $("#menu_box a").hover(function(){
+                $("#menu_box a").removeClass("selected")
+                $(this).addClass("selected");
+            } ,(function(){
+                $("#menu_box a").removeClass("selected");
+            })      
+        ,)})
+    </script> -->
+    
+
+</head>
+<body>
+    <!-- <style>
+    .cart{
+        color: #fff;
+        position: fixed;
+        width: 400px;
+        max-width: 80vw;
+        height: 100vh;
+        background-color: #0E0F11;
+        top: 0px;
+        right: -100%;
+        display: grid;
+        grid-template-rows: 50px 1fr 50px;
+        gap: 20px;
+        transition: right 1s;
+    }
+    
+    .cart .buttons .checkout{
+        background-color: #E8BC0E;
+        color: #000;
+    }
+    .cart h2{
+        color: #E8BC0E;
+        padding: 20px;
+        height: 30px;
+        margin: 0;
+    }
+    
+    
+    .cart .listCart .item{
+        display: grid;
+        grid-template-columns: 80px 1fr 70px;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .cart .listCart img{
+        width: 80px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .cart .listCart .item .name{
+        font-weight: bold;
+    }
+    .cart .listCart .item .quantity{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .cart .listCart .item .quantity span{
+        display: block;
+        width: 50px;
+        text-align: center;
+    }
+    
+    .cart .listCart{
+        padding: 20px;
+        overflow: auto;
+    }
+    .cart .listCart::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    .cart .buttons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    .cart .buttons div{
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .cart .buttons a{
+        color: #fff;
+        text-decoration: none;
+    }
+</style> -->
+    <table class="topbar">
+        <tr>
+            <td  width="200" ><a href="index.html"  title="Về trang chủ" style="margin-left: 70px;"><img src="./img/logo.png"></a></td>
+            <td  width="300">
+                <input id="txtsearch" type="text" placeholder="Nhập từ khóa tìm kiếm" />
+				
+				
+            </td>
+           
+            
+            <td width="300">
+                <div>
+                    <img id="avatar" src="./img/def-ava.jpg"/>
+                </div>
+                <div id="account">
+                    <a href="login.html"><b>Tài khoản</b></a> <br/>
+                    <a href="login.html">Đăng nhập</a> & <a href="singup.html">Đăng ký</a>
+                </div>
+            </td>
+            <td  width="200">
+                <div id="cart">
+                    <a href="cart.html"><img id="img-cart" src="./img/cart.png" alt="Giỏ hàng"/>
+                    <a href="cart.html">Giỏ hàng </a>
+                </div>
+            </td>
+        </tr>
+      </table>
+      
+	  <div id="nav" class="nav">
+            <ul style="margin-top: 5px;">
+                <li class="okeMau"><a href="index.html">Trang chủ</a></li>
+                <li class="okeMau"><a href="dongho.html">Đồng hồ</a></li>
+                <li class="okeMau"><a href="dongho4.html">Đồng hồ 4.0</a></li>                      
+                <li class="okeMau"><a href="#">Phụ kiện</a></li>
+                <li class="okeMau"><a href="diachi.html">Địa chỉ</a></li>
+                <li class="okeMau"><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+            
+        </div>
+        <div class="link-out">
+            <div class="link">
+                <a href="index.html">Trang chủ</a> <i class="fas fa-caret-right"></i> Tin tức
+            </div>
+        </div>
+        <section class="content-in">
+            <div class="row">
+                <div class="col-8 col-s-12 content">
+                    <div class="row1">
+                        <div class="col-3 col-s-3">
+                            <a href="https://donghohaitrieu.com/tin-tuc/dong-ho/review-dong-ho/dong-ho-seiko-super-cub.html"><img src="img/n1.jpg" class="img-new-left"></a>
+                        </div>
+                        <div class="col-9 col-s-9">
+                            <div class="title-new">
+                                <a href="#"> Review Patek Philippe Nautilus 5711 có gì đặc biệt, mẫu hot</a>
+                                <p>Có chiếc đồng hồ nào khiến giới sưu tập và tín đồ đồng hồ phải săn lùng ráo riết, sẵn sàng trả giá cao ngất ngưởng? Đó chính là Patek Philippe Nautilus 5711. Chiếc đồng hồ này có gì đặc biệt mà lại khiến người ta mê mẩn đến vậy?... </p>
+                                <span><i class="fas far fa-calendar-alt"></i> 07/05/2021</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row1">
+                        <div class="col-3 col-s-3">
+                            <a href="https://donghohaitrieu.com/tin-tuc/dong-ho/review-dong-ho/dong-ho-seiko-super-cub.html"><img src="img/tim-hieu-dong-ho-seiko-super-cub-co-gi-dac-biet-cac-mau-hot-bia.jpg" class="img-new-left"></a>
+                        </div>
+                        <div class="col-9 col-s-9">
+                            <div class="title-new">
+                                <a href="#">Tìm hiểu đồng hồ Seiko Super Cub có gì đặc biệt, các mẫu hot</a>
+                                <p>Nhằm đáp lại tình yêu của các tín đồ trên thế giới, Honda và Seiko đã kết hợp để trình làng mẫu Seiko Super Cub đầy ấn tượng. Hai biểu tượng của đất nước Nhật Bản khi kết hợp sẽ ra sao? Hãy cùng xem bài viết dưới đây để...</p>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row1">
+                        <div class="col-3 col-s-3">
+                            <a href="https://donghohaitrieu.com/tin-tuc/dong-ho/review-dong-ho/patek-philippe-nautilus-5724.html"><img src="img/review-patek-philippe-nautilus-5724-co-gi-dac-biet-mau-hot-bia.jpg" class="img-new-left"></a>
+                        </div>
+                        <div class="col-9 col-s-9">
+                            <div class="title-new">
+                                <a href="#">Review Patek Philippe Nautilus 5724 có gì đặc biệt, mẫu hot</a>
+                                <p>Patek Philippe 5724 thường được giới thượng lưu ưa chuộng bởi nó chính là biểu trưng của sự đẳng cấp cho bất kỳ ai sở hữu chúng. Vậy điều gì đặc biệt đã làm nên dòng sản phẩm này. Tất tần tật sẽ được Hải Triều giải đáp qua bài...</p>
+                                <span><i class="fas far fa-calendar-alt"></i>  11/11/2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row1">
+                        <div class="col-3 col-s-3">
+                            <a href="https://donghohaitrieu.com/tin-tuc/phu-kien-thoi-trang/ban-tay-chu-m-co-y-nghia-gi-deo-gi-de-giau-co-may-man.html"><img src="img/ban-tay-chu-m-co-y-nghia-gi-deo-gi-de-giau-co-may-man.jpg" class="img-new-left"></a>
+                        </div>
+                        <div class="col-9 col-s-9">
+                            <div class="title-new">
+                                <a href="#"> Bàn tay chữ M có ý nghĩa gì? Đeo gì để giàu có, may mắn?</a>
+                                <p>Có bao giờ bạn thắc mắc về những sự thật lý thú đằng sau bàn tay chữ M? Trên thực tế số người sở hữu đường chỉ tay đặc biệt này cực kỳ hiếm. Vậy chúng có mang ý nghĩa đặc biệt nào liên quan đến vận mệnh của chủ... </p>
+                                <span><i class="fas far fa-calendar-alt"></i>  11/11/2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row1">
+                        <div class="col-3 col-s-3">
+                            <a href="https://donghohaitrieu.com/tin-tuc/linh-tinh-giai-tri/20-11-la-ngay-gi-10-mon-qua-nen-tang-trong-ngay-nha-giao.html"><img src="img/20-11-la-ngay-gi-10-mon-qua-nen-tang-trong-ngay-Nha-giao.jpg" class="img-new-left"></a>
+                        </div>
+                        <div class="col-9 col-s-9">
+                            <div class="title-new">
+                                <a href="https://donghohaitrieu.com/tin-tuc/linh-tinh-giai-tri/20-11-la-ngay-gi-10-mon-qua-nen-tang-trong-ngay-nha-giao.html">20/11 là ngày gì? Nguồn gốc, ý nghĩa ngày Nhà giáo Việt Nam</a>
+                                <p>20/11 là ngày gì? Ý nghĩa của ngày 20 tháng 11? Vẫn còn là thắc mắc chung của rất nhiều người. Đây chính là ngày để ai đã và đang là học sinh gửi những lời chúc chân thành và bày tỏ sự biết ơn đến các thầy cô giáo,...</p>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row1">
+                        <div class="col-3 col-s-3">
+                            <a href="https://donghohaitrieu.com/tin-tuc/qua-tang/40-mon-qua-tang-tri-an-thay-co-cuc-ky-y-nghia-ngay-20-11.html"><img src="img/nen-tang-qua-gi-cho-co-giao-3-4.jpg" class="img-new-left"></a>
+                        </div>
+                        <div class="col-9 col-s-9">
+                            <div class="title-new">
+                                <a href="https://donghohaitrieu.com/tin-tuc/qua-tang/40-mon-qua-tang-tri-an-thay-co-cuc-ky-y-nghia-ngay-20-11.html">40 Món quà tặng tri ân thầy cô, cực kỳ ý nghĩa ngày 20/11</a>
+                                <p>Hòa trong không khí náo nức của ngày nhà giáo trọng đại, những lời cảm ơn, lời chúc mừng cùng những món quà tặng 20-11 đã khiến tình cảm trân quý giữa thầy và trò nổi bật và trân quý hơn bao giờ hết. Những món quà tặng ngày 20/11... </p>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row1">
+                        <div class="col-3 col-s-3">
+                            <a href="#"><img src="img/Nam-mo-thay-dong-ho-deo-tay-danh-con-gi-hen-hay-xui.jpg" class="img-new-left"></a>
+                        </div>
+                        <div class="col-9 col-s-9">
+                            <div class="title-new">
+                                <a href="https://donghohaitrieu.com/tin-tuc/dong-ho/nam-mo-thay-dong-ho-deo-tay-danh-con-gi-hen-hay-xui.html"">Nằm mơ thấy đồng hồ đeo tay đánh con gì? Hên hay Xui?</a>
+                                <p>Có bao giờ bạn ngủ mơ thấy đồng hồ đeo tay chưa? Bạn thắc mắc nằm mơ thấy nằm mơ thấy đồng hồ đeo tay đồng hồ đeo tay đánh con gì, có điềm báo gì không? Cùng Hải Triều cách giải mã giấc mơ về chúng thông qua bài...</p>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row1">
+                        <div class="col-3 col-s-3">
+                            <a href="https://donghohaitrieu.com/tin-tuc/dong-ho/ngay-11-thang-11-la-ngay-gi-le-doc-than-hay-le-hoi-mua-sam.html"><img src="img/ngay11.jpg" class="img-new-left"></a>
+                        </div>
+                        <div class="col-9 col-s-9">
+                            <div class="title-new">
+                                <a href="https://donghohaitrieu.com/tin-tuc/dong-ho/ngay-11-thang-11-la-ngay-gi-le-doc-than-hay-le-hoi-mua-sam.html">Ngày 11 tháng 11 là ngày gì? 11/11 là Lễ độc thân hay Lễ hội mua sắm?</a>
+                                <p>Người thì bảo 11 tháng 11 là Lễ độc thân. Còn người khác thì lại bảo ngày 11/11 là Lễ hội mua sắm. Vậy thực chất thì ngày 11 tháng 11 là ngày gì? Nguồn gốc và ý nghĩa ra sao? Hãy cùng Đồng Hồ Hải Triều điểm qua một...</p>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seemore">
+                        <button>XEM THÊM</button>
+                    </div>
+                </div>
+                <div class="col-4 content1">
+                    <div class="box-right">
+                        <p class="title">XEM NHIỀU NHẤT</p>
+                        <div class="box-right-small">
+                            <div class="img-small"><a href="https://donghohaitrieu.com/tin-tuc/dong-ho/mau-dong-ho/dong-ho-co-day-da.html"><img src="img/15-dong-dong-ho-co-day-da-dep-ben-ban-chay-moi-thoi-dai-bia.jpg"></a></div>
+                            <div class="txt-small">
+                                <a href="https://donghohaitrieu.com/tin-tuc/dong-ho/mau-dong-ho/dong-ho-co-day-da.html">15 dòng đồng hồ cơ dây da nổi tiếng nhất thế giới</a>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                        <div class="box-right-small">
+                            <div class="img-small"><a href="#"><img src="img/dong-ho-orient-star-mat-he-joker.jpg"></a></div>
+                            <div class="txt-small">
+                                <a href="#">Đồng hồ Orient Star Joker (mặt hề) tôn vinh nghệ thuật điện ảnh Hollywood</a>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                        <div class="box-right-small">
+                            <div class="img-small"><a href="https://donghohaitrieu.com/kinh-nghiem/phong-thuy/hat-xi-hoi-123-cai-lien-tuc-theo-gio-diem-gi-hen-hay-xui.html"><img src="img/hat-xi-hoi-1-2-3-cai-lien-tuc-theo-gio-diem-gi-hen-hay-xui.jpg"></a></div>
+                            <div class="txt-small">
+                                <a href="https://donghohaitrieu.com/kinh-nghiem/phong-thuy/hat-xi-hoi-123-cai-lien-tuc-theo-gio-diem-gi-hen-hay-xui.html">Hắt xì hơi 1,2,3 cái, liên tục, theo giờ điềm gì, hên hay xui?</a>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                        <div class="box-right-small">
+                            <div class="img-small"><a href="https://donghohaitrieu.com/kinh-nghiem/thu-cung-pet/cho-corgi-gia-bao-nhieu-an-gi-dac-tinh-cach-nuoi-noi-mua.html"><img src="img/cho-corgi-gia-bao-nhieu-an-gi-dac-tinh-cach-nuoi-noi-mua-bia.jpg"></a></div>
+                            <div class="txt-small">
+                                <a href="https://donghohaitrieu.com/kinh-nghiem/thu-cung-pet/cho-corgi-gia-bao-nhieu-an-gi-dac-tinh-cach-nuoi-noi-mua.html">Chó Corgi giá bao nhiêu, ăn gì, đặc tính, cách nuôi, nơi mua</a>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                        <div class="box-right-small">
+                            <div class="img-small"><a href="https://donghohaitrieu.com/kinh-nghiem/phat-phap-nhiem-mau/ong-hoang-than-tai-la-ai-tho-o-dau-van-khan-luu-y-khi-tho.html"><img src="img/ong-hoang-than-tai-la-ai-tho-o-dau-van-khan-luu-y-khi-tho-anh-bia.jpg"></a></div>
+                            <div class="txt-small">
+                                <a href="https://donghohaitrieu.com/kinh-nghiem/phat-phap-nhiem-mau/ong-hoang-than-tai-la-ai-tho-o-dau-van-khan-luu-y-khi-tho.html">Ông Hoàng Thần Tài là ai, thờ ở đâu, văn khấn, lưu ý khi thờ</a>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                        <div class="box-right-small">
+                            <div class="img-small"><a href="https://donghohaitrieu.com/tin-tuc/dong-ho/mau-dong-ho/nhung-mau-dong-ho-casio-nam-dep.html"><img src="img/nhung-mau-dong-ho-casio-nam-dep-chinh-hang-100-gop-0-bia.jpg"></a></div>
+                            <div class="txt-small">
+                                <a href="https://donghohaitrieu.com/tin-tuc/dong-ho/mau-dong-ho/nhung-mau-dong-ho-casio-nam-dep.html">100 mẫu đồng hồ Casio nam đẹp nhất năm 2023</a>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                        <div class="box-right-small">
+                            <div class="img-small"><a href="https://donghohaitrieu.com/tin-tuc/dong-ho/dong-ho-seiko-solar-titanium.html"><img src="img/seiko-solar-titanium-co-gi-dac-biet-co-nhung-dong-nao-bia.jpg"></a></div>
+                            <div class="txt-small">
+                                <a href="https://donghohaitrieu.com/tin-tuc/dong-ho/dong-ho-seiko-solar-titanium.html">Đồng hồ Seiko Solar Titanium có gì đặc biệt?</a>
+                                <span><i class="fas far fa-calendar-alt"></i> 12/11/2023</span>
+                            </div>
+                        </div>
+                        <div class="box-right-small">
+                            <div class="img-small"><a href="#"><img src="img/dong-ho-casio-quan-doi-co-gi-dac-biet-cac-mau-ban-chay-noi-mua-bia.jpg"></a></div>
+                            <div class="txt-small">
+                                <a href="#">Đồng hồ Casio quân đội đẹp, mạnh mẽ đậm chất &#8220;lính&#8221;</a>
+                                <span><i class="fas far fa-calendar-alt"></i>  11/11/2023</span>
+                            </div>
+                        </div>
+                        <div class="box-right-small">
+                            <div class="img-small"><a href="#"><img src="img/dong-ho-casio-alarm-chrono-la-gi-cac-mau-ban-chay-nhat-bia.jpg"></a></div>
+                            <div class="txt-small">
+                                <a href="#">Đồng hồ Casio Alarm Chrono là gì? Các mẫu bán chạy nhất</a>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                        <div class="box-right-small">
+                            <div class="img-small"><a href="#"><img src="img/dong-ho-tissot-seastar-co-gi-dac-biet-gia-bao-nhieu-co-tot-khong-bia.jpg"></a></div>
+                            <div class="txt-small">
+                                <a href="#">Đồng hồ lặn Tissot Seastar: &#8220;Huyền thoại biển cả&#8221;</a>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                        <div class="box-right-small">
+                            <div class="img-small"><a href="#"><img src="img/20-mau-dong-ho-tissot-nam-moi-nhat-gia-tot-noi-mua-uy-tin-bia.jpg"></a></div>
+                            <div class="txt-small">
+                                <a href="#">20 mẫu đồng hồ Tissot nam đẹp nhất, nên mua</a>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                        <div class="box-right-small">
+                            <div class="img-small"><a href="#"><img src="img/cach-kiem-tra-dong-ho-tissot-chinh-hang-de-hieu-chinh-xac-nhat-bia.jpg"></a></div>
+                            <div class="txt-small">
+                                <a href="#">Cách kiểm tra đồng hồ Tissot chính hãng dễ hiểu, chính xác nhất</a>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                        <div class="box-right-small">
+                            <div class="img-small"><a href="#"><img src="img/cac-dong-dong-ho-tissot-co-duoc-san-lung-nhat-hien-nay-co-gi-tot-bia.jpg"></a></div>
+                            <div class="txt-small">
+                                <a href="#">7 dòng đồng hồ Tissot cổ vẫn hot đến ngày nay</a>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                        <div class="box-right-small">
+                            <div class="img-small"><a href="#"><img src="img/10-mau-dong-ho-tissot-moonphase-thoi-thuong-doc-dao-nhat-bia.jpg"></a></div>
+                            <div class="txt-small">
+                                <a href="#">10 mẫu đồng hồ Tissot Moonphase thời thượng, độc đáo nhất</a>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                        <div class="box-right-small">
+                            <div class="img-small"><a href="#"><img src="img/dong-ho-richard-mille-055-co-gi-hot-top-10-mau-dep-nhat-bia.jpg"></a></div>
+                            <div class="txt-small">
+                                <a href="#">Đồng hồ Richard Mille 055 có gì hot? Top 10 mẫu đẹp nhất</a>
+                                <span><i class="fas far fa-calendar-alt"></i> 11/11/2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div style ="width: 100%; height: 340px; background-color: #333333; margin: 0px auto; float: left;">
+            <div style ="width: 1140; height: 340px; margin: 0px auto; color:#FFF; display: flex; flex-wrap: wrap; ">
+                <div class ="info">
+                    <span><b>Thông tin</b></span>
+                    <br />
+                    <ul style="list-style: none">
+                        <li><a href="#">Điện tử và công nghệ</a></li>
+                        <li><a href="#">Mobile và tablet</a></li>
+                        <li><a href="#">Thực phẩm</a></li>
+                        <li><a href="#">Thời trang</a></li>
+                        <li><a href="#">Mẹ và bé</a></li>
+                        <li><a href="#">Sách và văn phòng phẩm</a></li>
+                        <li><a href="#">Thể thao và dã ngoại</a></li>
+                        <li><a href="#">Máy tính và Laptop</a></li>
+                    </ul>
+                </div>
+                <div class ="info">
+                    <span><b>Hỗ trợ khách hàng</b></span>
+                    <br />
+                    <ul style="list-style: none">
+                        <li><a href="#">Điện tử và công nghệ</a></li>
+                        <li><a href="#">Mobile và tablet</a></li>
+                        <li><a href="#">Thực phẩm</a></li>
+                        <li><a href="#">Thời trang</a></li>
+                        <li><a href="#">Mẹ và bé</a></li>
+                        <li><a href="#">Sách và văn phòng phẩm</a></li>
+                        <li><a href="#">Thể thao và dã ngoại</a></li>
+                        <li><a id="tunnle" href="item.html">Máy tính và Laptop</a></li>
+                    </ul>
+                </div>
+                <div class ="info">
+                    <span><b>Chính sách mua hàng</b></span>
+                    <br />
+                    <ul style="list-style: none">
+                        <li><a href="#">Điện tử và công nghệ</a></li>
+                        <li><a href="#">Mobile và tablet</a></li>
+                        <li><a href="#">Thực phẩm</a></li>
+                        <li><a href="#">Thời trang</a></li>
+                        <li><a href="#">Mẹ và bé</a></li>
+                        <li><a href="#">Sách và văn phòng phẩm</a></li>
+                        <li><a href="#">Thể thao và dã ngoại</a></li>
+                        <li><a href="#">Máy tính và Laptop</a></li>
+                    </ul>
+                </div>
+                <div class ="info">
+                    <span><b>Liên hệ</b></span>
+                    
+                    Địa chỉ: Số 32, Nguyễn Lương Bằng, TP Hải Dương <br>
+                    Điện thoại: 0123456789<br>
+                    Emai: dongho@gmail.com 
+                </div>
+            </div>
+        </div>
+        <div style ="width: 100%; height: 60px; background-color: #282828; margin: 0px auto;float: left;">
+            <div id="coppy-right" >
+            <span>@Bản quyền thuộc về Khoa CNTT - Trường ĐHSPKT Hưng Yên</span>
+            </div>
+        </div>
+        <script src="js/Script.js"></script>
+    <script>
+        autoplay();
+    </script>
+</body>
+</html>
