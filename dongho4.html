@@ -4,7 +4,8 @@
   
 	<link rel="stylesheet" href="css/style.css">
 	<script src="./jquery/jquery-3.6.0.min.js"></script>
-    <script src="Script.js"></script>
+    <script src="js/Script.js"></script>
+    <script src="js/main.js"></script>
     <script>
         $(document).ready(function(){
            
@@ -63,7 +64,7 @@
             </tr>
           </table>
    
-        <div id="nav">
+        <div id="nav" class="nav">
             <ul>
                 <li><a href="index.html">Trang chủ</a></li>
                 <li><a href="dongho.html">Đồng hồ</a></li>
@@ -75,9 +76,11 @@
             
         </div>
     </div>
-    <div id="content">
-        <div id="menu_box">
-            <ul id="menu">
+    <div id="body">
+        <div id="upper_body">
+            
+                <div id="menu_box">
+                    <ul id="menu">
                         <li>
                             <a class="menu_title" href="#">ĐỒNG HỒ</a>
                             <ul class="sub_menu">
@@ -106,10 +109,10 @@
                             <a class="menu_title" href="#">ĐỒNG HỒ 4.0</a>
                             <ul class="sub_menu">
                               <li>
-                                <a href="">Điện tử</a>
+                                <a href="dongho4.html">Điện tử</a>
                               </li>
                               <li>
-                                <a href="">Cảm ứng</a>
+                                <a href="dongho4.html">Cảm ứng</a>
                               </li>
                               
                             </ul>
@@ -134,115 +137,91 @@
                               </li>                          
                             </ul>
                         </li>
-                        <li>
-                            <a class="menu_title" class="items_box">
+                       
+                    </ul>
+    
+                </div>
+                <div class="wrapper">
+                    <div id="slideshow2">
+                        <img src="./img/banner1.png"/>
+                        <img src="./img/banner2.png"/>
+                        <img src="./img/banner3.png"/>
+                        <img src="./img/banner4.png"/>
+                    </div>
+            
+                </div>
+                
+            </div>
+        <div class="items_box">
+                <div class="title">
+                    <b>ĐỒNG HỒ 4.0</b>
+                </div>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <div class="item_big">
+                                <img class="item_big_img" src="./img/item14.jpg">
+                                <h4  class="vs"><strong>Đồng hồ thông minh BeFit B4 44mm</strong></h4>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item" style="text-align:center;">                               
+                                <img class="item_img" src="./img/item11.jpg">
+                                <h3  class="vs"><strong>Xiaomi Repber Watch</strong></h3>
+                                <strong class="gs">20.990.000₫</strong>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item" style="text-align:center;">                               
+                                <img class="item_img" src="./img/item12.jpg">
+                                <h3  class="vs"><strong>Galaxy Apple Watch</strong></h3>
+                                <strong class="gs">20.990.000₫</strong>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item" style="text-align:center;">                               
+                                <img class="item_img" src="./img/item13.jpg">
+                                <h3  class="vs"><strong>Galaxy Y3</strong></h3>
+                                <strong class="gs">20.990.000₫</strong>
+                            </div>
+                        </td>
                         
-                            <b>ĐỒNG HỒ ĐIỆN TỬ</b>
-                       </a>
-                            <ul class="sub_menu">
-                              <li>
-                                <a href="">Dây sạc</a>
-                              </li>
-                              <li>
-                                <a href="">Tai nghe</a>
-                              </li>
-                              <li>
-                                <a href="">Loa</a>
-                              </li>
-                              <li>
-                                <a href="">USB</a>
-                              </li>
-                              <li>
-                                <a href="">Khác</a>
-                              </li>                          
-                            </ul>
-                        </li>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="item_big">
+                                <img class="item_big_img" src="./img/item15.jpg">
+                                <h4  class="vs"><strong>Đồng hồ thông minh Apple Watch SE 2022 GPS 40mm</strong></h4>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item" style="text-align:center;">                               
+                                <img class="item_img" src="./img/item12.jpg">
+                                <h3  class="vs"><strong>Galaxy Apple Watch</strong></h3>
+                                <strong class="gs">20.990.000₫</strong>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item" style="text-align:center;">                               
+                                <img class="item_img" src="./img/item13.jpg">
+                                <h3  class="vs"><strong>Galaxy Y3</strong></h3>
+                                <strong class="gs">20.990.000₫</strong>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item" style="text-align:center;">                               
+                                <img class="item_img" src="./img/item11.jpg">
+                                <h3  class="vs"><strong>Xiaomi Repber Watch</strong></h3>
+                                <strong class="gs">20.990.000₫</strong>
+                            </div>
+                        </td>
                        
-                    
-                       
-             </ul>
+                    </tr>
+                </table>
+            </div>
+            
 
         </div>
-        <table style="width: 70%;float: left;">
-            <tr>
-               
-                <td>
-                    <div class="item" style="text-align:center;">                               
-                        <img class="item_img" src="./img/item11.jpg">
-                        <h3>Xiaomi Repber Watch</h3>
-                        <strong class="gs">20.990.000₫</strong>
-                    </div>
-                </td>
-                <td>
-                    <div class="item" style="text-align:center;">                               
-                        <img class="item_img" src="./img/item11.jpg">
-                        <h3>iPhone X 64GB Xám</h3>
-                        <strong class="gs">20.990.000₫</strong>
-                    </div>
-                </td>
-                <td>
-                    <div class="item" style="text-align:center;">                               
-                        <img class="item_img" src="./img/item12.jpg">
-                        <h3>Galaxy Apple Watch</h3>
-                        <strong class="gs">20.990.000₫</strong>
-                    </div>
-                </td>
-                <td>
-                    <div class="item" style="text-align:center;">                               
-                        <img class="item_img" src="./img/item13.jpg">
-                        <h3>Galaxy Y3</h3>
-                        <strong class="gs">20.990.000₫</strong>
-                    </div>
-                </td>
-                <td>
-                    <div class="item" style="text-align:center;">                               
-                        <img class="item_img" src="./img/item15.jpg">
-                        <h3>Galaxy plus Y3</h3>
-                        <strong class="gs">20.999.000₫</strong>
-                    </div>
-                </td>
-                
-            </tr>
-            <tr>
-               
-                <td>
-                    <div class="item" style="text-align:center;">                               
-                        <img class="item_img" src="./img/item11.jpg">
-                        <h3>Xiaomi Repber Watch</h3>
-                        <strong class="gs">20.990.000₫</strong>
-                    </div>
-                </td>
-                <td>
-                    <div class="item" style="text-align:center;">                               
-                        <img class="item_img" src="./img/item12.jpg">
-                        <h3>Galaxy Apple Watch</h3>
-                        <strong class="gs">20.990.000₫</strong>
-                    </div>
-                </td>
-                <td>
-                    <div class="item" style="text-align:center;">                               
-                        <img class="item_img" src="./img/item13.jpg">
-                        <h3>Galaxy Y3</h3>
-                        <strong class="gs">20.990.000₫</strong>
-                    </div>
-                </td>
-                <td>
-                    <div class="item" style="text-align:center;">                               
-                        <img class="item_img" src="./img/item11.jpg">
-                        <h3>Apple X 4GB Xám</h3>
-                        <strong class="gs">20.990.000₫</strong>
-                    </div>
-                </td>
-                <td>
-                    <div class="item" style="text-align:center;">                               
-                        <img class="item_img" src="./img/item15.jpg">
-                        <h3>Galaxy plus Y3</h3>
-                        <strong class="gs">20.999.000₫</strong>
-                    </div>
-                </td>
-               
-            </tr>
-        </table>
     </div>
    
     <!-- foot -->
