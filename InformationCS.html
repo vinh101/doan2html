@@ -1,0 +1,221 @@
+<html>
+    <head>
+    <link href="img/cart.png" rel="shortcut icon" type="image/x-icon">
+	<meta charset="UTF-8">
+	<title>Giỏ hàng</title>
+    <link rel="stylesheet" href="./viyeu/fontawesome-free-6.4.2-web/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Paying.css">
+    <link rel="stylesheet" href="css/thanhtoan.css">
+	<script src="./jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/Script.js"></script>
+    
+    
+   
+</head>
+<body style="font-family: arial;">
+    <div style="width: 100%; height:130px;position:relative">
+        <table class="topbar">
+            <tr>
+                <td  width="200" ><a href="index.html"  title="Về trang chủ" style="margin-left: 70px;"><img src="./img/logo.png"></a></td>
+                <td  width="300">
+                    <input id="txtsearch" type="text" placeholder="Nhập từ khóa tìm kiếm" />
+                    
+                    
+                </td>
+               
+                
+                <td width="300">
+                    <div>
+                        <img id="avatar" src="./img/def-ava.jpg"/>
+                    </div>
+                    <div id="account">
+                        <a href="login.html"><b>Tài khoản</b></a> <br/>
+                        <a href="login.html">Đăng nhập</a> & <a href="singup.html">Đăng ký</a>
+                    </div>
+                </td>
+                <td  width="200">
+                    <div>
+                    
+                        <a class="Cartbutom"  href="#"><i style="color: white;" class="fa-solid fa-cart-shopping"></i>&nbsp;<span  class="OnCart"></span>  </a>
+                        
+                    </div>
+                </td>
+            </tr>
+          </table>
+   
+        <div id="nav" class="nav">
+            <ul style="margin-top: 5px;">
+                <li class="okeMau"><a href="index.html">Trang chủ</a></li>
+                <li class="okeMau"><a href="dongho.html">Đồng hồ</a></li>
+                <li class="okeMau"><a href="dongho4.html">Đồng hồ 4.0</a></li>                      
+                <li class="okeMau"><a href="tintuc.html">Tin tức</a></li>
+                <li class="okeMau"><a href="diachi.html">Địa chỉ</a></li>
+                <li class="okeMau"><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+            
+        </div>
+        
+    </div>
+    <div id="content">
+        <div id="menu_box">
+            <ul id="menu">
+                <li>
+                    <a class="menu_title" href="#">ĐỒNG HỒ</a>
+                            <ul class="sub_menu">
+                              <li>
+                                <a href="dongho.html">Galaxy</a>
+                              </li>
+                              <li>
+                                <a href="dongho.html">Rolex</a>
+                              </li>
+                              <li>
+                                <a href="dongho.html">Luxury</a>
+                              </li>
+                              <li>
+                                <a href="dongho.html">A</a>
+                              </li>
+                              <li>
+                                <a href="dongho.html">Fixdex</a>
+                              </li>
+                              <li>
+                                <a href="dongho.html">Roblox</a>
+                              </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a class="menu_title" href="#">ĐỒNG HỒ 4.0</a>
+                            <ul class="sub_menu">
+                              <li>
+                                <a href="">Điện tử</a>
+                              </li>
+                              <li>
+                                <a href="">Cảm ứng</a>
+                              </li>
+                              
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="menu_title" href="#">PHỤ KIỆN</a>
+                            <ul class="sub_menu">
+                              <li>
+                                <a href="">Dây sạc</a>
+                              </li>
+                              <li>
+                                <a href="">Tai nghe</a>
+                              </li>
+                              <li>
+                                <a href="">Loa</a>
+                              </li>
+                              <li>
+                                <a href="">USB</a>
+                              </li>
+                              <li>
+                                <a href="">Khác</a>
+                              </li>                          
+                            </ul>
+                        </li>
+                       
+                    </ul>
+                </li>
+                
+               
+            </ul>
+
+        </div>
+        <div class="wrapper">
+            <div id="slideshow2">
+                <img src="./img/banner1.png"/>
+                <img src="./img/banner2.png"/>
+                <img src="./img/banner3.png"/>
+                <img src="./img/banner4.png"/>
+            </div>
+        </div>
+    </div>
+    <section style="margin-top:-300px">
+        <div class="option">
+            <a style="margin-left: 10px" href="index.html">Trang chủ </a>
+            <span>&#160;/&#160;</span>
+            <a href="Paying.html">Giỏ hàng</a>
+        </div>
+    </section>
+    <section >
+        <div class="row CartCT">
+            <from class="col-6 col-s-12 col-m-12" >
+                <div class=" Paying">
+                    <div class="col-12 col-s-12 col-m-12 payhead">
+                        THÔNG TIN NGƯỜI NHẬN
+                    </div>
+                    <div class="infomationpay">
+                        <div class="col-12 col-s-12 col-m-12 pay1">
+                            <label for="txt_hdem">Họ tên <span id="s_hdem" style="color: red;">*</span>: </label>
+                            <input type="text" id="txt_hdem" placeholder="Nhập họ và tên">
+                        </div>
+                        <div class="col-12 col-s-12 col-m-12 pay1">
+                            <label for="txt_tinh">Tỉnh <span id="s_tinh" style="color: red;">*</span>: </label>
+                            <select id="txt_tinh">
+                                <option value="Hưng Yên">Hưng Yên</option>
+                                <option value="Hà Nội">Hà Nội</option>
+                                <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                <option value="Hà Nam">Hà Nam</option>
+                                <option value="Hải Dương">Hải Dương</option>
+                                <option value="Bắc Giang">Bắc Giang</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-s-12 col-m-12 pay1">
+                            <label for="txt_diachi">Địa chỉ <span id="s_diachi" style="color: red;">*</span>: </label>
+                            <input type="text" id="txt_diachi" placeholder="Địa chỉ của bạn">
+                        </div>
+        
+                        <div class="col-12 col-s-12 col-m-12 pay1">
+                            <label for="txt_sdt">Điện thoại <span id="s_sdt" style="color: red;">*</span>: </label>
+                            <input type="text" id="txt_sdt" placeholder="Số điện thoại của bạn">
+                        </div>
+                        <div class="col-12 col-s-12 col-m-12 pay1">
+                            <label for="txt_email">Email <span id="s_email" style="color: red;">*</span>: </label>
+                            <input type="text" id="txt_email" placeholder="Email của bạn (nếu có)">
+                        </div>
+                        <div class="col-12 col-s-12 col-m-12 pay1">
+                            <label for="txt_tt">Thông tin : </label>
+                            <textarea id="thongtin" placeholder="Thêm ghi chú"></textarea>
+                            
+                        </div>
+                        <div style="margin-bottom: 10px" class="col-12 col-s-12 col-m-12 pay1">
+                            <button onclick="DatHang()" class="send">
+                                Gửi đơn hàng
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </from>
+            <div class="col-6 col-s-12 col-m-12 Infoder">
+                <div>Thông tin đơn hàng</div>
+                <div class="Infoder11">
+                </div>
+               <div class="Totalpay">
+                    <div>Tổng tiền</div>
+                    <div>
+                        <span>Tạm tính: </span>
+                        <span class="cart-total-price"></span>
+                    </div>
+                    <div>
+                        <span>Giảm giá: </span>
+                        <span class="cart-total-price2"></span>
+                    </div>
+                    <div>
+                        <span>Thành tiền:(Đã bao gồm VAT 10%): </span>
+                        <span class="cart-total-price4"></span>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </section>
+</body>
+    <script src="js/Script.js"></script>
+    <script src="js/giohang.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        autoplay();
+    </script>
+</html>

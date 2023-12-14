@@ -5,14 +5,15 @@
     <LINK REL="SHORTCUT ICON"  HREF="./img/ad1.PNG">
         <link rel="stylesheet" href="css/style.css">
         <script src="./jquery/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="./viyeu/fontawesome-free-6.4.2-web/fontawesome/css/all.min.css">
         <script src="js/main.js"></script>
     
     <script>
         $(document).ready(function(){
            
-            $(".item").click(function(){
-                $("#tunnle")[0].click();
-            })
+            // $(".item").click(function(){
+            //     $("#tunnle")[0].click();
+            // })
             $(".menu_title").click(function(){
                 if ($(this).next().is(":hidden")){
                     $(".menu_title").removeClass("selected");
@@ -25,13 +26,10 @@
                     $(this).next().slideToggle();
                 }                   
             })
-            $("#menu_box a").hover(function(){
-                $("#menu_box a").removeClass("selected")
-                $(this).addClass("selected");
-            } ,(function(){
-                $("#menu_box a").removeClass("selected");
-            })      
-        ,)})
+            
+            } 
+              
+        ,)
     </script>
     
 
@@ -139,10 +137,40 @@
                 </div>
             </td>
             <td  width="200">
-                <div id="cart">
-                    <a href="cart.html"><img id="img-cart" src="./img/cart.png" alt="Giỏ hàng"/>
-                    <a href="cart.html">Giỏ hàng </a>
+                <div>
+                    <a>Giỏ hàng</a>
+                    <a class="Cartbutom"  href="Paying.html"><i style="color: white;" class="fa-solid fa-cart-shopping"></i>&nbsp;<span style="color: white;" class="OnCart"></span></a>
+                    
                 </div>
+                <!-- <div class="Cart">
+                    <div class="Cart-content">
+                            <div class="Cart-header">
+                                <a>Giỏ hàng</a>
+                                <a id="Soluong"></a>
+                                <span id="HideCart"> &times;</span>
+                                <a href="Paying.html" class="Watchall-Cart">Xem tất cả</a>
+                                
+                            </div>
+                            <div class="Cart-body">
+                                <div class="Cart-row">
+                                    <span class="cart-item  cart-column">Sản Phẩm</span>
+                                    <span class="cart-price  cart-column">Giá</span>
+                                    <span class="cart-quantity  cart-column">Số Lượng</span>
+                                </div>
+                                <div class="over-cart overY">
+                                </div>
+                               
+                                <div class="cart-total">
+                                    <strong class="cart-total-title">Tổng Cộng:</strong>
+                                    <span class="cart-total-price"></span>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button onclick="UpdateCart()" type="button" class="close-footer">Cập nhập giỏ hàng</button>
+                                <a href="Paying.html"><button type="button" class="order">Thanh Toán</button></a>
+                            </div>
+                    </div> -->
+                <!-- </div> -->
             </td>
         </tr>
       </table>
@@ -194,22 +222,19 @@
                             <a class="menu_title" href="#">ĐỒNG HỒ</a>
                             <ul class="sub_menu">
                               <li>
-                                <a href="dongho.html">Galaxy</a>
+                                <a href="galaxy.html">Galaxy</a>
                               </li>
                               <li>
-                                <a href="dongho.html">Rolex</a>
+                                <a href="rolex.html">Rolex</a>
                               </li>
                               <li>
-                                <a href="dongho.html">Luxury</a>
+                                <a href="luxury.html">Luxury</a>
                               </li>
                               <li>
-                                <a href="dongho.html">A</a>
+                                <a href="donghoa.html">A</a>
                               </li>
                               <li>
-                                <a href="dongho.html">Fixdex</a>
-                              </li>
-                              <li>
-                                <a href="dongho.html">Roblox</a>
+                                <a href="fixdex.html">Fixdex</a>
                               </li>
                             </ul>
                         </li>
@@ -218,10 +243,10 @@
                             <a class="menu_title" href="#">ĐỒNG HỒ 4.0</a>
                             <ul class="sub_menu">
                               <li>
-                                <a href="dongho4.html">Điện tử</a>
+                                <a href="dientu.html">Điện tử</a>
                               </li>
                               <li>
-                                <a href="dongho4.html">Cảm ứng</a>
+                                <a href="camung.html">Cảm ứng</a>
                               </li>
                               
                             </ul>
@@ -230,19 +255,13 @@
                             <a class="menu_title" href="#">PHỤ KIỆN</a>
                             <ul class="sub_menu">
                               <li>
-                                <a href="">Dây sạc</a>
+                                <a href="daysac.html">Dây sạc</a>
                               </li>
                               <li>
-                                <a href="">Tai nghe</a>
+                                <a href="dayda.html">Dây da</a>
                               </li>
                               <li>
-                                <a href="">Loa</a>
-                              </li>
-                              <li>
-                                <a href="">USB</a>
-                              </li>
-                              <li>
-                                <a href="">Khác</a>
+                                <a href="khac.html">Khác</a>
                               </li>                          
                             </ul>
                         </li>
@@ -279,7 +298,7 @@
                                 </div>
                                 <img class="item_img" src="./img/item1.jpg">
                                 <h3 class="vs"><strong>Đồng Hồ Luxyry A32</strong></h3>
-                                <strong class="gs">19.999.000₫</strong>
+                                <strong class="gs">19.999.000₫</strong><a onclick="addCart({id:'01',image:'img/item1.jpg',price:'19999000',name:'Đồng hồ LuxyryA32'})"  class="Gio"><i class="fa-solid fa-cart-shopping"></i></a><br>
                                 
                                 
                             </div>
@@ -291,7 +310,7 @@
                                 </div>
                                 <img class="item_img" src="./img/item2.jpg">
                                 <h3 class="vs"><strong>Đồng Hồ Const-Fc</strong></h3>
-                                <strong class="gs">14.990.000₫</strong>
+                                <strong class="gs">14.990.000₫</strong><a onclick="addCart({id:'02',image:'img/item2.jpg',price:'14990000',name:'Đồng Hồ Const-Fc'})"  class="Gio"><i class="fa-solid fa-cart-shopping"></i></a><br>
                             </div>
                         </td>
                         <td>
@@ -301,7 +320,7 @@
                                 </div>
                                 <img class="item_img" src="./img/item3.jpg">
                                 <h3 class="vs"><strong>Đồng Hồ V6H4</strong></h3>
-                                <strong class="gs">24.990.000₫</strong>
+                                <strong class="gs">24.990.000₫</strong><a onclick="addCart({id:'03',image:'img/item3.jpg',price:'24990000',name:'Đồng Hồ V6H4'})"  class="Gio"><i class="fa-solid fa-cart-shopping"></i></a><br>
                             </div>
                         </td>
                         <td>
@@ -312,7 +331,7 @@
                         </div>
                         <img class="item_img" src="./img/item4.jpg">
                         <h3  class="vs"><strong>Đồng Hồ Galaxy9</strong></h3>
-                        <strong class="gs">22.990.000₫</strong>
+                        <strong class="gs">22.990.000₫</strong><a onclick="addCart({id:'04',image:'img/item4.jpg',price:'22990000',name:'Đồng Hồ Galaxy9'})"  class="Gio"><i class="fa-solid fa-cart-shopping"></i></a><br>
                     </div>
                         </td>
                         <td>
@@ -323,7 +342,7 @@
                         </div>
                         <img class="item_img" src="./img/item5.jpg">
                         <h3  class="vs"><strong>Đồng Hồ Rolex100</strong></h3>
-                        <strong class="gs">20.990.000₫</strong>
+                        <strong class="gs">20.990.000₫</strong><a onclick="addCart({id:'05',image:'img/item5.jpg',price:'20990000',name:'Đồng Hồ Rolex100'})"  class="Gio"><i class="fa-solid fa-cart-shopping"></i></a><br>
                     </div>
                         </td>
                     </tr>
@@ -414,6 +433,46 @@
                                 <strong class="gs">20.990.000₫</strong>
                             </div>
                         </td>
+                    </tr>
+                    <tr>
+                
+                        <td>
+                            <div class="item" style="text-align:center;">                               
+                                <img class="item_imgg" src="./img/galaxy1.jpg">
+                                <h3>Đồng Hồ Galaxy L23</h3>
+                                <strong class="gs">19.999.000₫</strong>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item" style="text-align:center;">                               
+                                <img class="item_imgg" src="./img/galaxy2.jpg">
+                                <h3>Đồng Hồ Galaxy X8</h3>
+                                <strong class="gs">21.990.000₫</strong>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item" style="text-align:center;">                               
+                                <img class="item_imgg" src="./img/galaxy3.jpg">
+                                <h3>Đồng Hồ Galaxy Plus</h3>
+                                <strong class="gs">10.990.000₫</strong>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item" style="text-align:center;">                               
+                                <img class="item_imgg" src="./img/D105SMW.jpg">
+                                <h3>Đồng Hồ Galaxy Dota</h3>
+                                <strong class="gs">11.111.000₫</strong>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item" style="text-align:center;">                               
+                                <img class="item_imgg" src="./img/galaxy6.jpg">
+                                <h3>Đồng Hồ Galaxy Doxa</h3>
+                                <strong class="gs">20.990.000₫</strong>
+                            </div>
+                        </td>
+                        
+                        
                     </tr>
                 </table>
             </div>
@@ -516,7 +575,7 @@
                     <li><a href="#">Mẹ và bé</a></li>
                     <li><a href="#">Sách và văn phòng phẩm</a></li>
                     <li><a href="#">Thể thao và dã ngoại</a></li>
-                    <li><a id="tunnle" href="item.html">Máy tính và Laptop</a></li>
+                    <li><a id="tunnle" href="#">Máy tính và Laptop</a></li>
                 </ul>
             </div>
             <div class ="info">
@@ -549,6 +608,8 @@
     </div>
     
     <script src="js/Script.js"></script>
+    <script src="js/giohang.js"></script>
+    <script src="js/main.js"></script>
     <script>
         autoplay();
     </script>

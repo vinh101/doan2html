@@ -4,51 +4,52 @@
   
 	<link rel="stylesheet" href="css/style.css">
 	<script src="./jquery/jquery-3.6.0.min.js"></script>
-    <script src="js/Script.js"></script>
-    <!-- <script>
+    <link rel="stylesheet" href="./viyeu/fontawesome-free-6.4.2-web/fontawesome/css/all.min.css">
+    <script src="Script.js"></script>
+    <script>
         $(document).ready(function(){
            
             // $("#buy").click(function(){
             //     $("#cart_go")[0].click();
             // })
             var amount = Number(sessionStorage.getItem(amount));
-			var listP="";
-			$("#buy").click(function(){
+			// var listP="";
+			// $("#buy").click(function(){
 				
-				if (amount != null)
-					amount += 1;
+			// 	if (amount != null)
+			// 		amount += 1;
 					
 				
-				else
-					amount = 1;
+			// 	else
+			// 		amount = 1;
 				
-				$(".amount").text(amount);
-                $(".amount").show();
-				sessionStorage.setItem("amount", amount);
+			// 	$(".amount").text(amount);
+            //     $(".amount").show();
+			// 	sessionStorage.setItem("amount", amount);
 
-                var pImg= $(".item").find(".item_img").attr("src");
-				var pName= $(".item").parent().find(".item_name").text();
-				var pPrice= $(".item").parent().find(".gs").text();
-				// var pImg= $(this).parent().find(".product-img").attr("src");
-				// var pName= $(this).parent().find(".product-name").text();
-				// var pPrice= $(this).parent().find(".sale-price").text();
-				var product = {
-					"img": pImg,
-					"name": pName,
-					"price": pPrice,
-				}
-				var cart = sessionStorage.getItem("cart");
+            //     var pImg= $(".item").find(".item_img").attr("src");
+			// 	var pName= $(".item").parent().find(".item_name").text();
+			// 	var pPrice= $(".item").parent().find(".gs").text();
+			// 	// var pImg= $(this).parent().find(".product-img").attr("src");
+			// 	// var pName= $(this).parent().find(".product-name").text();
+			// 	// var pPrice= $(this).parent().find(".sale-price").text();
+			// 	var product = {
+			// 		"img": pImg,
+			// 		"name": pName,
+			// 		"price": pPrice,
+			// 	}
+			// 	var cart = sessionStorage.getItem("cart");
 				
-				if (cart != null)
-					listP = cart +","+ JSON.stringify(product);
+			// 	if (cart != null)
+			// 		listP = cart +","+ JSON.stringify(product);
 				
-				else
-					listP = JSON.stringify(product);
+			// 	else
+			// 		listP = JSON.stringify(product);
 				
-				sessionStorage.setItem("cart",listP);
-			})
+			// 	sessionStorage.setItem("cart",listP);
+			// })
         })
-    </script> -->
+    </script>
    
 </head>
 <body style="font-family: arial;">
@@ -73,21 +74,21 @@
                     </div>
                 </td>
                 <td  width="200">
-                    <div id="cart">
-                        <a id="cart_go"href="cart.html"><img id="img-cart" src="./img/cart.png" alt="Giỏ hàng"/>
-                        <a  href="cart.html">Giỏ hàng </a>
-                        <a class="amount" style="display:none;margin-left:2px;line-height:19px;width:17px;height:17px; background-color: red; border-radius:45%"></a>
+                    <div>
+                    
+                        <a class="Cartbutom"  href="Paying.html"><i style="color: white;" class="fa-solid fa-cart-shopping"></i>&nbsp;<span  class="OnCart"></span>  </a>
+                        
                     </div>
                 </td>
             </tr>
           </table>
    
-        <div id="nav">
+          <div id="nav" class="nav">
             <ul>
                 <li><a href="index.html">Trang chủ</a></li>
                 <li><a href="dongho.html">Đồng hồ</a></li>
                 <li><a href="dongho4.html">Đồng hồ 4.0</a>                 
-                <li><a href="#">Phụ kiện</a></li>
+                <li><a href="tintuc.html">Tin tức</a></li>
                 <li><a href="diachi.html">Địa chỉ</a></li>
                 <li><a href="lienhe.html">Liên hệ</a></li>
             </ul>
@@ -96,13 +97,13 @@
     </div>
     <div id="content">
         <div id="content_left">
-            <img src="./img/item1.jpg">
+            <img src="./img/z.jpg">
         </div>
         <div id="content_mid">
-            <h2>Đồng hồ Luxury A32</h2>
+            <h2>Đồng hồ thông minh Apple Watch SE 2022 GPS 40mm</h2>
             <img src="">
             
-            <strong class="gs">19.990.000₫</strong>
+            <strong class="gs">20.990.000₫</strong>
             <!-- <input class="btn_color" type="button" value="Vàng">
             <input class="btn_color" type="button" value="Bạc">
             <input class="btn_color" type="button" value="Đồng"> -->
@@ -213,5 +214,11 @@
         <h3 class="item_name">Đồng hồ thông minh Apple Watch SE 2022 GPS 40mm</h3>
         
     </div>
+    <script src="js/Script.js"></script>
+    <script src="js/giohang.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        autoplay();
+    </script>
 </body>
 </html> 

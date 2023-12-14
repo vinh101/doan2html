@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/admin.css">
-    <script src="https://kit.fontawesome.com/e06076012c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./viyeu/fontawesome-free-6.4.2-web/fontawesome/css/all.min.css">
     <script src="./jquery/jquery-3.6.0.min.js"></script>
     <script src="./js/main.js"></script>
     <title>Quản lý cửa hàng bán Đồng hồ</title>
@@ -68,35 +68,23 @@
                                 </div>
                                 <div class="col-12 col-s-12 padding-box">
                                     <select name="loaisp" id="loaisp">
-                                        <!-- <option value="choose">--Chọn loại sản phẩm--</option>
-                                        <option value="PC Đồ Họa - WORKSTATION">PC Đồ Họa - WORKSTATION</option>
-                                        <option value="PC Gaming, Streaming">PC Gaming, Streaming</option>
-                                        <option value="PC Văn Phòng, AIO, Mini PC">PC Văn Phòng, AIO, Mini PC</option>
-                                        <option value="Laptop, Máy Tính Xách Tay">Laptop, Máy Tính Xách Tay</option>
-                                        <option value="Màn Hình">Màn Hình</option>
-                                        <option value="Linh Kiện Máy Tính">Linh Kiện Máy Tính</option>
-                                        <option value="CPU - Bộ Vi Xử Lý">CPU - Bộ Vi Xử Lý</option>
-                                        <option value="Mainboard - Bo Mạch Chủ">Mainboard - Bo Mạch Chủ</option>
-                                        <option value="RAM - Bộ Nhớ Trong">RAM - Bộ Nhớ Trong</option>
-                                        <option value="Ổ Cứng HDD">Ổ Cứng HDD</option>
-                                        <option value="Ổ Cứng SSD">Ổ Cứng SSD</option>
-                                        <option value="ODD - Ổ đĩa quang">ODD - Ổ đĩa quang</option>
-                                        <option value="VGA - Card Màn Hình">VGA - Card Màn Hình</option>
-                                        <option value="Case - Vỏ Máy Tính">Case - Vỏ Máy Tính</option>
-                                        <option value="PSU - Nguồn Máy Tính">PSU - Nguồn Máy Tính</option>
-                                        <option value="Tản Nhiệt PC, Cooling">Tản Nhiệt PC, Cooling</option>
-                                        <option value="Gaming Gear">Gaming Gear</option>
-                                        <option value="Bàn Phím, Chuột">Bàn Phím, Chuột</option>
-                                        <option value="Bộ Bàn Phím Chuột">Bộ Bàn Phím Chuột</option>
-                                        <option value="Lót Chuột, Bàn Di Chuột">Lót Chuột, Bàn Di Chuột</option>
+                                        <option value="choose">--Chọn loại sản phẩm--</option>
+                                        <option value="Đồng hồ Rolex cơ">Đồng hồ Rolex cơ</option>
+                                        <option value="Đồng hồ điện tử">Đồng hồ điện tử</option>
+                                        <option value="Đồng hồ A S Max">Đồng hồ A S Max</option>
+                                        <option value="Đồng hồ chống nước">Đồng hồ chống nước</option>
+                                        <option value="Đồng hồ thợ lặn">Đồng hồ thợ lặn</option>
+                                        <option value="Đồng hồ vận động viên">Đồng hồ vận động viên</option>
+                                        <option value="Linh kiện đồng hồ">Linh kiện đồng hồ</option>
+                                        <option value="Dây đồng hồ">Dây đồng hồ</option>
+                                        <option value="Kim đồng hồ">Kim đồng hồ</option>
+                                        <option value="Phụ tùng đồng hồ">Phụ tùng đồng hồ</option>
+                                        <option value="Pin đồng hồ mini">Pin đồng hồ mini</option>
+                                        <option value="Pin đồng hồ tròn">Pin đồng hồ tròn</option>
                                         <option value="Tai Nghe">Tai Nghe</option>
-                                        <option value="Phụ Kiện Gaming">Phụ Kiện Gaming</option>
-                                        <option value="Phụ Kiện Laptop, PC, Khác">Phụ Kiện Laptop, PC, Khác</option>
-                                        <option value="Dây Cáp Các Loại">Dây Cáp Các Loại</option>
-                                        <option value="Thiết Bị Chuyển Đổi">Thiết Bị Chuyển Đổi</option>
-                                        <option value="Bộ Chia Tín Hiệu">Bộ Chia Tín Hiệu</option>
-                                        <option value="Linh Kiện Laptop">Linh Kiện Laptop</option>
-                                        <option value="Phụ Kiện Khác">Phụ Kiện Khác</option> -->
+                                        <option value="Dây sạc">Dây sạc</option>
+                                        
+                                        <option value="Phụ Kiện Khác">Phụ Kiện Khác</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-s-12 padding-box">
@@ -105,10 +93,10 @@
                                 <div class="col-12 col-s-12 padding-box">
                                     <select name="nhacungcap" id="nhacungcap">
                                         <option value="choose">--Chọn nhà cung cấp--</option>
-                                        <option value="Trần Anh">Bùi Hoa</option>
-                                        <option value="Tiên Tiến">Thúy Kiều</option>
-                                        <option value="Phúc Anh">Thúy Vân</option>
-                                        <option value="An Phát">Kim Trọng</option>
+                                        <option value="Bùi Hoa">Bùi Hoa</option>
+                                        <option value="Thúy Kiều">Thúy Kiều</option>
+                                        <option value="Thúy Vân">Thúy Vân</option>
+                                        <option value="Kim Trọng">Kim Trọng</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-s-12 padding-box">
@@ -173,44 +161,32 @@
                             <div class="col-3 col-s-12 padding-box">
                                 <select name="nhacungcap" id="nhacungcap1">
                                     <option value="choose">--Chọn nhà cung cấp--</option>
-                                    <option value="Trần Anh">Tú Bà</option>
-                                    <option value="Tiên Tiến">Ông Vương</option>
-                                    <option value="Phúc Anh">Lưu Bá Ôn</option>
-                                    <option value="An Phát">Mã Văn Tài</option>
+                                        <option value="Bùi Hoa">Bùi Hoa</option>
+                                        <option value="Thúy Kiều">Thúy Kiều</option>
+                                        <option value="Thúy Vân">Thúy Vân</option>
+                                        <option value="Kim Trọng">Kim Trọng</option>
                                 </select>
                             </div>
                             <div class="col-3 col-s-12 padding-box">
-                                <!-- <select name="loaisp" id="loaisp1">
+                                <select name="loaisp" id="loaisp1">
                                     <option value="choose">--Chọn loại sản phẩm--</option>
-                                    <option value="PC Đồ Họa - WORKSTATION">PC Đồ Họa - WORKSTATION</option>
-                                    <option value="PC Gaming, Streaming">PC Gaming, Streaming</option>
-                                    <option value="PC Văn Phòng, AIO, Mini PC">PC Văn Phòng, AIO, Mini PC</option>
-                                    <option value="Laptop, Máy Tính Xách Tay">Laptop, Máy Tính Xách Tay</option>
-                                    <option value="Màn Hình">Màn Hình</option>
-                                    <option value="Linh Kiện Máy Tính">Linh Kiện Máy Tính</option>
-                                    <option value="CPU - Bộ Vi Xử Lý">CPU - Bộ Vi Xử Lý</option>
-                                    <option value="Mainboard - Bo Mạch Chủ">Mainboard - Bo Mạch Chủ</option>
-                                    <option value="RAM - Bộ Nhớ Trong">RAM - Bộ Nhớ Trong</option>
-                                    <option value="Ổ Cứng HDD">Ổ Cứng HDD</option>
-                                    <option value="Ổ Cứng SSD">Ổ Cứng SSD</option>
-                                    <option value="ODD - Ổ đĩa quang">ODD - Ổ đĩa quang</option>
-                                    <option value="VGA - Card Màn Hình">VGA - Card Màn Hình</option>
-                                    <option value="Case - Vỏ Máy Tính">Case - Vỏ Máy Tính</option>
-                                    <option value="PSU - Nguồn Máy Tính">PSU - Nguồn Máy Tính</option>
-                                    <option value="Tản Nhiệt PC, Cooling">Tản Nhiệt PC, Cooling</option>
-                                    <option value="Gaming Gear">Gaming Gear</option>
-                                    <option value="Bàn Phím, Chuột">Bàn Phím, Chuột</option>
-                                    <option value="Bộ Bàn Phím Chuột">Bộ Bàn Phím Chuột</option>
-                                    <option value="Lót Chuột, Bàn Di Chuột">Lót Chuột, Bàn Di Chuột</option>
-                                    <option value="Tai Nghe">Tai Nghe</option>
-                                    <option value="Phụ Kiện Gaming">Phụ Kiện Gaming</option>
-                                    <option value="Phụ Kiện Laptop, PC, Khác">Phụ Kiện Laptop, PC, Khác</option>
-                                    <option value="Dây Cáp Các Loại">Dây Cáp Các Loại</option>
-                                    <option value="Thiết Bị Chuyển Đổi">Thiết Bị Chuyển Đổi</option>
-                                    <option value="Bộ Chia Tín Hiệu">Bộ Chia Tín Hiệu</option>
-                                    <option value="Linh Kiện Laptop">Linh Kiện Laptop</option>
-                                    <option value="Phụ Kiện Khác">Phụ Kiện Khác</option>
-                                </select> -->
+                                        <option value="Đồng hồ Rolex cơ">Đồng hồ Rolex cơ</option>
+                                        <option value="Đồng hồ điện tử">Đồng hồ điện tử</option>
+                                        <option value="Đồng hồ A S Max">Đồng hồ A S Max</option>
+                                        <option value="Đồng hồ chống nước">Đồng hồ chống nước</option>
+                                        <option value="Đồng hồ thợ lặn">Đồng hồ thợ lặn</option>
+                                        <option value="Đồng hồ vận động viên">Đồng hồ vận động viên</option>
+                                        <option value="Linh kiện đồng hồ">Linh kiện đồng hồ</option>
+                                        <option value="Dây đồng hồ">Dây đồng hồ</option>
+                                        <option value="Kim đồng hồ">Kim đồng hồ</option>
+                                        <option value="Phụ tùng đồng hồ">Phụ tùng đồng hồ</option>
+                                        <option value="Pin đồng hồ mini">Pin đồng hồ mini</option>
+                                        <option value="Pin đồng hồ tròn">Pin đồng hồ tròn</option>
+                                        <option value="Tai Nghe">Tai Nghe</option>
+                                        <option value="Dây sạc">Dây sạc</option>
+                                        
+                                        <option value="Phụ Kiện Khác">Phụ Kiện Khác</option>
+                                </select>
                             </div>
                             <div class="col-2 col-s-12 padding-box">
                                 <button><i class="fas fas fa-search"></i> Tìm kiếm</button>
@@ -297,8 +273,8 @@
                     var d = new Date();
                     masanpham = Number(d);
                 }
-                else if (!masanpham.match(number) || masanpham.length != 13) {
-                    alert("Mã sản phẩm phải là kiểu số và có độ dài là 13 ký tự! Vui lòng nhập lại!");
+                else if (!masanpham.match(number) || masanpham.length != 2) {
+                    alert("Mã sản phẩm phải là kiểu số và có độ dài là 2 ký tự! Vui lòng nhập lại!");
                     return false;
                 }
 

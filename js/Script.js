@@ -43,38 +43,38 @@ $(document).ready(function(){
     // })
     var amount = Number(sessionStorage.getItem(amount));
     var listP="";
-    $("#buy").click(function(){
+    // $("#buy").click(function(){
         
-        if (amount != null)
-            amount += 1;
+    //     if (amount != null)
+    //         amount += 1;
             
         
-        else
-            amount = 1;
+    //     else
+    //         amount = 1;
         
-        $(".amount").text(amount);
-        $(".amount").show();
-        sessionStorage.setItem("amount", amount);
+    //     $(".amount").text(amount);
+    //     $(".amount").show();
+    //     sessionStorage.setItem("amount", amount);
 
-        var pImg= $(".item").find(".item_img").attr("src");
-        var pName= $(".item").parent().find(".item_name").text();
-        var pPrice= $(".item").parent().find(".gs").text();
-        // var pImg= $(this).parent().find(".product-img").attr("src");
-        // var pName= $(this).parent().find(".product-name").text();
-        // var pPrice= $(this).parent().find(".sale-price").text();
-        var product = {
-            "img": pImg,
-            "name": pName,
-            "price": pPrice,
-        }
-        var cart = sessionStorage.getItem("cart");
+    //     var pImg= $(".item").find(".item_img").attr("src");
+    //     var pName= $(".item").parent().find(".item_name").text();
+    //     var pPrice= $(".item").parent().find(".gs").text();
+    //     // var pImg= $(this).parent().find(".product-img").attr("src");
+    //     // var pName= $(this).parent().find(".product-name").text();
+    //     // var pPrice= $(this).parent().find(".sale-price").text();
+    //     var product = {
+    //         "img": pImg,
+    //         "name": pName,
+    //         "price": pPrice,
+    //     }
+    //     var cart = sessionStorage.getItem("cart");
         
-        if (cart != null)
-            listP = cart +","+ JSON.stringify(product);
+    //     if (cart != null)
+    //         listP = cart +","+ JSON.stringify(product);
         
-        else
-            listP = JSON.stringify(product);
+    //     else
+    //         listP = JSON.stringify(product);
         
-        sessionStorage.setItem("cart",listP);
-    })
+    //     sessionStorage.setItem("cart",listP);
+    // })
 })

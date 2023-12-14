@@ -4,14 +4,15 @@
   
 	<link rel="stylesheet" href="css/style.css">
 	<script src="./jquery/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./viyeu/fontawesome-free-6.4.2-web/fontawesome/css/all.min.css">
     <script src="js/Script.js"></script>
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function(){
            
-            $(".item").click(function(){
-                $("#tunnle")[0].click();
-            })
+            // $(".item").click(function(){
+            //     $("#tunnle")[0].click();
+            // })
             $(".menu_title").click(function(){
                 if ($(this).next().is(":hidden")){
                     $(".menu_title").removeClass("selected");
@@ -56,9 +57,10 @@
                     </div>
                 </td>
                 <td  width="200">
-                    <div id="cart">
-                        <a href="cart.html"><img id="img-cart" src="./img/cart.png" alt="Giỏ hàng"/>
-                        <a href="cart.html">Giỏ hàng </a>
+                    <div>
+                        <a>Giỏ hàng</a>
+                        <a class="Cartbutom"  href="Paying.html"><i style="color: white;" class="fa-solid fa-cart-shopping"></i>&nbsp;<span style="color: white;" class="OnCart"></span></a>
+                        
                     </div>
                 </td>
             </tr>
@@ -83,58 +85,52 @@
                     <ul id="menu">
                         <li>
                             <a class="menu_title" href="#">ĐỒNG HỒ</a>
-                            <ul class="sub_menu">
-                              <li>
-                                <a href="dongho.html">Galaxy</a>
-                              </li>
-                              <li>
-                                <a href="dongho.html">Rolex</a>
-                              </li>
-                              <li>
-                                <a href="dongho.html">Luxury</a>
-                              </li>
-                              <li>
-                                <a href="dongho.html">A</a>
-                              </li>
-                              <li>
-                                <a href="dongho.html">Fixdex</a>
-                              </li>
-                              <li>
-                                <a href="dongho.html">Roblox</a>
-                              </li>
-                            </ul>
-                        </li>
-                        
-                        <li>
-                            <a class="menu_title" href="#">ĐỒNG HỒ 4.0</a>
-                            <ul class="sub_menu">
-                              <li>
-                                <a href="dongho4.html">Điện tử</a>
-                              </li>
-                              <li>
-                                <a href="dongho4.html">Cảm ứng</a>
-                              </li>
-                              
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="menu_title" href="#">PHỤ KIỆN</a>
-                            <ul class="sub_menu">
-                              <li>
-                                <a href="">Dây sạc</a>
-                              </li>
-                              <li>
-                                <a href="">Tai nghe</a>
-                              </li>
-                              <li>
-                                <a href="">Loa</a>
-                              </li>
-                              <li>
-                                <a href="">USB</a>
-                              </li>
-                              <li>
-                                <a href="">Khác</a>
-                              </li>                          
+                                    <ul class="sub_menu">
+                                      <li>
+                                        <a href="galaxy.html">Galaxy</a>
+                                      </li>
+                                      <li>
+                                        <a href="rolex.html">Rolex</a>
+                                      </li>
+                                      <li>
+                                        <a href="luxury.html">Luxury</a>
+                                      </li>
+                                      <li>
+                                        <a href="donghoa.html">A</a>
+                                      </li>
+                                      <li>
+                                        <a href="dongho.html">Fixdex</a>
+                                      </li>
+                                      <li>
+                                        <a href="roblox.html">Roblox</a>
+                                      </li>
+                                    </ul>
+                                </li>
+                                
+                                <li>
+                                    <a class="menu_title" href="#">ĐỒNG HỒ 4.0</a>
+                                    <ul class="sub_menu">
+                                      <li>
+                                        <a href="dientu.html">Điện tử</a>
+                                      </li>
+                                      <li>
+                                        <a href="camung.html">Cảm ứng</a>
+                                      </li>
+                                      
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="menu_title" href="#">PHỤ KIỆN</a>
+                                    <ul class="sub_menu">
+                                      <li>
+                                        <a href="daysac.html">Dây sạc</a>
+                                      </li>
+                                      <li>
+                                        <a href="khac.html">Khác</a>
+                                      </li>                          
+                                    </ul>
+                                </li>
+                               
                             </ul>
                         </li>
                        
@@ -283,5 +279,11 @@
         <span>@Bản quyền thuộc về Khoa CNTT - Trường ĐHSPKT Hưng Yên</span>
         </div>
     </div>
+    <script src="js/Script.js"></script>
+    <script src="js/giohang.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        autoplay();
+    </script>
 </body>
 </html> 

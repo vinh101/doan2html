@@ -1,0 +1,103 @@
+.Infoder{
+    padding: 20px;
+}
+.Infoder div:first-child{
+    font-size: 18px;
+}
+.Infoder1{
+    display: flex;
+    margin: 20px;
+    margin-left: 30px;
+    width: 100%;
+}
+.Infoder1 img{
+    width: 60px;
+    height: 60px;
+}
+.Infoder1 div{
+   
+    margin-left: 20px;
+    margin-top: 3%;
+    line-height: 20px;
+}
+.Infoder1 span{
+  
+   font-weight: 600;
+}
+.Paying{
+    padding-left: 5px;
+ }
+ .payhead{
+     margin-top: 20px;
+     font-weight: bold;
+ }
+ .pay1{
+     display: inline-block;
+     margin: auto;
+     line-height: 25px;
+     width: 90%;
+     margin-left: 5%;
+     margin-top: 10px;
+ }
+ .pay1 label{
+    width: 100%;
+    
+ }
+ .pay1 input{
+    width: 100%;
+     border-radius: 3px;
+     border: 1px solid rgb(244, 206, 180);
+     line-height: 20px;
+     outline: none;
+     padding: 5px;
+     outline: none;
+ }
+ 
+#thongtin{
+    height: 88px; 
+    width: 100%;
+     border-radius: 3px;
+     border: 1px solid rgb(244, 206, 180);
+     
+ }
+ #txt_tinh{
+     width: 100%;
+     border-radius: 3px;
+     border: 1px solid rgb(244, 206, 180);
+     height: 28px;
+     
+ }
+ .send{
+     margin-left: 77%;
+     background-color: rgb(222, 55, 55);
+     line-height: 35px;
+     border: none;
+     color: white;
+     font-weight: bold;
+     cursor: pointer;
+     border-radius: 4px;
+ }
+ .send:hover{
+   
+    background-color: rgb(55, 222, 105);
+    
+}
+.Totalpay div:first-child{
+ font-size: 18;
+ color: red;
+ margin-left: 0px;
+ border: none;
+}
+.Totalpay div{
+    padding: 10px;
+    width: 80%;
+    margin-left: 20px;
+    border-bottom: 1px solid rgb(196, 185, 185);
+   }
+.Totalpay> div>span:last-child{
+ float: right;
+ font-size: 14px;
+ font-weight: 600 ;
+ margin-right: 20px;
+}
+

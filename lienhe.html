@@ -6,6 +6,34 @@
     <link rel="stylesheet" type="text/css" href="css/lienhe.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./viyeu/fontawesome-free-6.4.2-web/fontawesome/css/all.min.css">
+    <script src="./jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/Script.js"></script>
+    <script>
+        $(document).ready(function(){
+           
+            // $(".item").click(function(){
+            //     $("#tunnle")[0].click();
+            // })
+            $(".menu_title").click(function(){
+                if ($(this).next().is(":hidden")){
+                    $(".menu_title").removeClass("selected");
+                    $(this).addClass("selected");
+                    $(".menu_title").next().slideUp();
+                    $(this).next().slideToggle();
+                    
+                }   
+                else{
+                    $(this).next().slideToggle();
+                }                   
+            })
+            $("#menu_box a").hover(function(){
+                $("#menu_box a").removeClass("selected")
+                $(this).addClass("selected");
+            } ,(function(){
+                $("#menu_box a").removeClass("selected");
+            })      
+        ,)})
+    </script>
 </head>
 <body>
     <div style="width: 100%; height:130px;position:relative">
@@ -29,13 +57,14 @@
                     </div>
                 </td>
                 <td  width="200">
-                    <div id="cart">
-                        <a href="cart.html"><img id="img-cart" src="./img/cart.png" alt="Giỏ hàng"/>
-                        <a href="cart.html">Giỏ hàng </a>
+                    <div>
+                        <a>Giỏ hàng</a>
+                        <a class="Cartbutom"  href="Paying.html"><i style="color: white;" class="fa-solid fa-cart-shopping"></i>&nbsp;<span style="color: white;" class="OnCart"></span></a>
+                        
                     </div>
                 </td>
             </tr>
-          </table>
+            </table>
    
           <div id="nav" class="nav">
             <ul>
@@ -47,8 +76,11 @@
                 <li><a href="lienhe.html">Liên hệ</a></li>
             </ul>
             
-        </div>
+         </div>
+        
     </div>
+    
+    <br>
     <header>
         <h1>Liên Hệ Với Chúng Tôi</h1>
     </header>
@@ -77,6 +109,12 @@
         <p><i class="fa-solid fa-envelope"></i><a style="padding-left: 10px">buivanvinh12blqd@gmail.com</a></p>
         <p><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/meowkeugaugauz" style="color:aliceblue; padding-left: 10px">Bùi Văn Vĩnh</a></p>
     </footer>
+    <script src="js/Script.js"></script>
+    <script src="js/giohang.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        autoplay();
+    </script>  
 </body>
 </html>
 
