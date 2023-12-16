@@ -1,127 +1,268 @@
-/* #left-content {
-    width: 60%;
-    min-height: 500px;
-    float: left;
-    margin: 50px 0px;
-    border: solid 1px black;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-#right-content {
-    width: 30%;
-    min-height: 500px;
-    float: left;
-    background-color: #eee;
-    margin: 30px 0px;
-    padding: 20px;
-}
+/* For mobile phones: */
 
-#left-content h3 {
-    background-color: #EEE;
-    padding: 15px;
-    line-height: 48px;
-    margin: 0px;
-}
-
-#left-content table {
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
+[class*="col-"] {
     width: 100%;
-    margin-top: 30px;
+    float: left;
 }
 
-#left-content th,
-td {
-    border-bottom: 1px solid #ccc;
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
 }
 
-#left-content th {
-    border-top: 1px solid #ccc;
+@media only screen and (min-width: 1024px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
 }
 
-.cart-item-img {
-    width: 100px;
+.main-login {
+    max-width: 1220px;
+    padding: 0px 10px;
 }
 
-#left-content td:nth-child(1) {
-    text-align: center;
+.main-login .box-title {
+    border-bottom: 2px solid #00a2ff;
+    margin-top: 40px;
 }
 
-#left-content td:nth-child(4),
-td:nth-child(6) {
-    text-align: center;
-    color: red;
+.main-login .box-title .title {
+    background-color: #00a2ff;
+    width: 120px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    color: white;
+    border-radius: 0px 15px 0px 0px;
+    margin-left: 0px;
 }
 
-#left-content td:nth-child(5) input[type='text'] {
-    text-align: center;
-    line-height: 24px;
-    width: 17px;
-    margin-left: -6px;
+.main-login .row .padding-le .margin-bot {
+    margin-bottom: 10px;
 }
 
-#left-content td:nth-child(5) input[type='button'] {
-    text-align: center;
-    height: 30px;
-    width: 5px;
-    margin-left: -6px;
+.main-login .row .padding-le {
+    padding: 10px 25px;
 }
 
-#left-content td:nth-child(5) {
-    padding-left: 15px;
+.main-login .row .padding-le .title1 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-#left-content td:nth-child(7) img {
+.main-login .row .padding-le label {
+    font-size: 15px;
+}
+
+.main-login .row .padding-le input[type="text"], input[type="password"] {
+    padding: 8px;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.main-login .row .padding-le button {
+    padding: 9px;
+    border: none;
+    font-size: 12px;
     cursor: pointer;
+    color: white;
+    border-radius: 3px;
 }
 
-#delivery-to,
-#coupon,
-#payment {
-    width: 100%;
-    min-height: 150px;
-    background-color: #FFF;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid black;
+.main-login .row .padding-le button:hover {
+    opacity: 0.7;
 }
 
-#payment span {
-    color: red;
+.main-login .row .padding-le .clearfix a {
+    text-decoration: none;
+    font-size: 15px;
+    font-style: italic;
     float: right;
 }
 
-#payment input {
-    color: #FFF;
-    background-color: red;
+.main-login .row .padding-le .clearfix a:hover {
+    text-decoration: underline;
+}
+
+.main-login .row .padding-le .btn-login-as {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main-login .row .padding-le .p1 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.main-login .row .padding-le .p2 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.main-login .row .padding-le .a1 {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #00a2ff;
+}
+
+.main-login .row .padding-le .a1:hover {
+    color: red;
+}
+
+.main-signup {
+    max-width: 1220px;
+    padding: 0px 10px;
+}
+
+.main-signup .box-title {
+    border-bottom: 2px solid #00a2ff;
+    margin-top: 40px;
+}
+
+.main-signup .box-title .title {
+    background-color: #00a2ff;
+    width: 98px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    color: white;
+    border-radius: 0px 15px 0px 0px;
+    margin-left: 0px;
+}
+
+.main-signup .row .padding-le .margin-bot {
+    margin-bottom: 20px;
+}
+
+.main-signup .row .padding-le {
+    padding: 10px 25px;
+}
+
+.main-signup .row .padding-le .title1 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.main-signup .row .padding-le .margin-bot label {
+    font-size: 15px;
+}
+
+.main-signup .row .padding-le .margin-bot input[type="text"], input[type="password"], input[type="email"], select {
+    padding: 8px;
+    font-size: 15px;
     width: 100%;
-    height: 36px;
-    border: 0;
+    border: 1px solid #ccc;
+}
+
+.main-signup .row .padding-le .margin-bot button {
+    padding: 9px;
+    border: none;
+    font-size: 12px;
     cursor: pointer;
-    opacity: 0.8;
-    border-radius: 15px;
+    color: white;
+    border-radius: 3px;
 }
 
-#payment input:hover {
-    opacity: 1.0;
+.main-signup .row .padding-le .margin-bot button:hover {
+    opacity: 0.7;
 }
 
-#payment-method,
-#delivery-method {
-    line-height: 28px;
+.main-signup .row .padding-le .clearfix {
+    text-align: center;
+    margin-top: 15px;
 }
 
-#process input {
-    color: #FFF;
-    background-color: red;
-    width: 200px;
-    height: 36px;
-    border: 0;
+.main-signup .row .padding-le .clearfix button {
+    padding: 10px 30px;
+    border: none;
+    font-size: 12px;
     cursor: pointer;
-    opacity: 0.8;
-    border-radius: 15px;
-    margin-top: 30px;
+    color: white;
+    border-radius: 3px;
+    background-color: #00a2ff;
 }
 
-#process input:hover {
-    opacity: 1.0;
-} */
+.main-signup .row .padding-le .clearfix button:hover {
+    opacity: 0.7;
+}
+

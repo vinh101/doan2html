@@ -197,7 +197,7 @@ td{
       font-size: 18px;
       margin-left: 10px;
       margin-right: 10px;
-      background-color: orange;
+      background-color: rgb(154, 177, 228);
       color: white;
       border: 1px solid #aaaaaa;
       padding: 5px;
@@ -512,8 +512,11 @@ td{
 #content{
 width: 90%;
 height: 600px;
-margin: 20px auto;
+margin-bottom: 50px;
+/* margin: 20px auto; */
 padding-left: 50px;
+color:#254535;
+
 }
 #content_left{
     width: 25%;
@@ -658,7 +661,7 @@ padding-left: 50px;
     float: right;
     position: absolute;
     top: 175px;
-    right: 200px;
+    right: 28px;
     border-radius: 10px;
     text-align: center;
 }
@@ -744,3 +747,41 @@ padding-left: 50px;
     cursor: pointer;
     display: block;
   }
+
+  .header-inner .box-right-top-KH {
+    float: right;
+    position: relative;
+}
+
+.header-inner .box-right-top-KH .box-login-bottom {
+    display: none;
+    position: absolute;
+    top: 32px;
+    right: 0px;
+    z-index: 1;
+}
+
+.header-inner .box-right-top-KH .box-login-bottom button {
+    border: none;
+    padding: 10px;
+    width: 160px;
+    text-align: left;
+    background-color: #0483cc;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    display: block;
+}
+
+.header-inner .box-right-top-KH .box-login-bottom button:hover {
+    background-color: #295a77;
+}
+
+#boxrighttopKH:hover #box-b {
+    display: block;
+}
+
+.header-m-out {
+    background-color: white;
+    width: 100%;
+}

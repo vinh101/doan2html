@@ -9,7 +9,29 @@
     <link rel="stylesheet" href="css/thanhtoan.css">
 	<script src="./jquery/jquery-3.6.0.min.js"></script>
     <script src="js/Script.js"></script>
-    
+    <script>
+        $(document).ready(function(){
+           
+            // $(".item").click(function(){
+            //     $("#tunnle")[0].click();
+            // })
+            $(".menu_title").click(function(){
+                if ($(this).next().is(":hidden")){
+                    $(".menu_title").removeClass("selected");
+                    $(this).addClass("selected");
+                    $(".menu_title").next().slideUp();
+                    $(this).next().slideToggle();
+                    
+                }   
+                else{
+                    $(this).next().slideToggle();
+                }                   
+            })
+            
+            } 
+              
+        ,)
+    </script>
     
    
 </head>

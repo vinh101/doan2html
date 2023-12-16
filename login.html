@@ -1,10 +1,15 @@
+<html>
 <head>
 	<meta charset="UTF-8">
 	<title>Trang Chủ</title>
   <LINK REL="SHORTCUT ICON"  HREF="./img/hai.png">
 	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="./viyeu/fontawesome-free-6.4.2-web/fontawesome/css/all.min.css">
 	<script src="./jquery/jquery-3.6.0.min.js"></script>
     <script src="Script.js"></script>
+    
+
   
 </head>
 <body style="font-family: arial; font-weight:lighter">
@@ -23,22 +28,49 @@
             </td>
            
         </tr>
-      </table>
+    </table>
 
-      <div id="login_body">
-        <div id="login_logo">
-            <img src="./img/logo_login.jpg">
+    <section class="main-login">
+        <div class="box-title">
+            <div class="title">ĐĂNG NHẬP</div>
         </div>
-        <div id="form_login">
-            <h2 style="line-height: 40px;">ĐĂNG NHẬP</h2>
-            <input class="loginfo" type="text" placeholder="Email/Tài khoản/Số điện thoại" />
-            <input class="loginfo" type="password" placeholder="Mật khẩu" />
-            <input id="btnlogin" type="button" value="Đăng nhập" /></br></br>
-
-            <a href="./singup.html" class="login__registerButton">Quên mật khẩu</a> / <a href="./singup.html" class="login__registerButton">Đăng ký</a>
-            <img src="./img/alt_login.jpg">
+        <div class="row">
+            <div class="col-6 col-s-12 padding-le">
+                <div class="title1">
+                    Thông tin khách hàng đăng nhập hệ thống.
+                </div>
+                <form id="lginKH">
+                    <div class="col-5 col-s-12 margin-bot">
+                        <label for="uname">Email hoặc số điện thoại</label>
+                    </div>
+                    <div class="col-7 col-s-12 margin-bot">
+                        <input type="text" id="tk" name="uname" required>
+                    </div>
+                    <div class="col-5 col-s-12 margin-bot">
+                        <label for="psw">Mật khẩu</label>
+                    </div>
+                    <div class="col-7 col-s-12 margin-bot">
+                        <input type="password" id="mk" name="psw" required>
+                    </div>
+                    <div class="clearfix">
+                        <button style="background-color: #0d8ad3;">Đăng nhập</button>
+                        <a href="#">Quên mật khẩu</a>
+                    </div>
+                </form>
+                <div class="btn-login-as">
+                    <button style="background-color: #0b4cc5;"><i class="fab fa-facebook-square"></i> Đăng nhập bằng
+                        Facebook</button>
+                    <button style="background-color: #ab5858;"><i class="fab fa-google-plus-square"></i> Đăng nhập
+                        bằng Google</button>
+                </div>
+            </div>
+            <div class="col-6 col-s-12 padding-le">
+                <p class="p1">Bạn chưa là thành viên.</p>
+                <p class="p2">Đăng ký là thành viên để hưởng nhiều lợi ích và đặt mua hàng dễ dàng hơn.</p>
+                <a href="singup.html" class="a1">Đăng ký tài khoản</a>
+            </div>
         </div>
-      </div>
+    </section>
         
 
 
@@ -103,4 +135,6 @@
         <span>@Bản quyền thuộc về Khoa CNTT - Trường ĐHSPKT Hưng Yên</span>
         </div>
     </div>
+    <script src="./js/login.js"></script>
 </body>
+</html>

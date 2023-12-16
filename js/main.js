@@ -61,7 +61,7 @@ function HoaDonBan() {
 }
 
 function TinTuc() {
-    window.location.href = "./TinTuc.html";
+    window.location.href = "./TinTucNew.html";
 }
 
 function ThietLap() {

@@ -6,14 +6,11 @@
     <LINK REL="SHORTCUT ICON"  HREF="./img/hai.png">
       <link rel="stylesheet" href="css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/cart.css">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
     <!-- font roboto -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    
   </head>
   
   <body style="font-family: arial; font-weight:lighter">
@@ -37,19 +34,133 @@
     <div class="signup">
       <div class="signup__container">
         <h1>Đăng Ký</h1>
-        <form action="">
-          <h5>Email</h5>
-          <input type="text" class="input-signup-username" />
-          <h5>Tài khoản</h5>
-          <input type="text" class="input-signup-username" />
-          <h5>Mật khẩu</h5>
-          <input type="password" class="input-signup-password" />
-          <h5>Nhập lại mật khẩu</h5>
-          <input type="password" class="input-signup-password" />
-          <button type="submit" class="signup__signInButton">Đăng Ký</button>
-        </form>
+        <form>
+          <div class="col-10 col-s-9 margin-bot">
+              <label for="name">Họ tên:</label>
+          </div>
+          <div class="col-10 col-s-9 margin-bot">
+              <input type="text" name="name" id="tenkh" placeholder="Nhập tên khách hàng...">
+          </div>
+          <div>
+              <label for="phone">Số điện thoại</label>
+          </div>
+          <div class="col-10 col-s-9 margin-bot">
+              <input type="text" name="phone" id="sdtkh" placeholder="Nhập số điện thoại khách hàng...">
+          </div>
+          <div class="col-2 col-s-3 margin-bot">
+              <label for="email">Email</label>
+          </div>
+          <div class="col-10 col-s-9 margin-bot">
+              <input type="email" name="email" id="emailkh" placeholder="Nhập email khách hàng...">
+          </div>
+          <div>
+              <label for="ps">Mật khẩu</label>
+          </div>
+          <div class="col-10 col-s-9 margin-bot">
+              <input type="password" name="ps" id="mkkh" placeholder="Nhập mật khẩu khách hàng...">
+          </div>
+          <div>
+              <label for="ps-repeat">Nhập lại mật khẩu</label>
+          </div>
+          <div class="col-10 col-s-9 margin-bot">
+              <input type="password" name="ps-repeat" id="mkkh1"
+                  placeholder="Nhập lại mật khẩu khách hàng...">
+          </div>
+          <div class="col-2 col-s-3 margin-bot">
+              <label for="address">Địa chỉ</label>
+          </div>
+          <div class="col-10 col-s-9 margin-bot">
+              <input type="text" name="address" id="diachikh" placeholder="Nhập địa chỉ khách hàng...">
+          </div>
+          <div>
+              <label for="code">Mã xác nhận</label>
+          </div>
+          <div class="col-10 col-s-9 margin-bot">
+              <input type="text" name="code" id="codesubmit" placeholder="Nhập mã các nhận...">
+          </div>
+      </form>
+      <div class="clearfix">
+          <button onclick="DangKy()" style="background-color: #f8f8f9; margin-left: 170px; width: 75px;height: 30px;;border-radius: 15px;cursor: pointer;">Đăng ký</button>
+      </div>
+  </div>
+</div>
+<script>
+  var list = JSON.parse(localStorage.getItem('Customer')) || [];
+
+  function DangKy() {
+      var makh;
+      var tenkh = document.getElementById("tenkh").value;
+      var sdtkh = document.getElementById("sdtkh").value;
+      var emailkh = document.getElementById("emailkh").value;
+      var diachikh = document.getElementById("diachikh").value;
+      var mkkh = document.getElementById("mkkh").value;
+      var mkkh1 = document.getElementById("mkkh1").value;
+      var codesubmit = document.getElementById("codesubmit").value;
+      var number = /^[0-9]+$/;
+      var atposition = emailkh.indexOf("@");
+      var dotposition = emailkh.lastIndexOf(".");
+
+      if (makh == null || makh == "") {
+          var d = new Date();
+          makh = Number(d);
+      }
+
+      if (tenkh == null || tenkh == "") {
+          alert("Tên khách hàng không được để trống! Vui lòng nhập lại!");
+          return false;
+      }
+      else if (sdtkh == null || sdtkh == "") {
+          alert("Số điện thoại khách hàng không được để trống! Vui lòng nhập lại!");
+          return false;
+      } else if (!sdtkh.match(number) || sdtkh.length != 10) {
+          alert("Số điện thoại khách hàng phải là kiểu số và có độ dài là 10 ký tự! Vui lòng nhập lại!");
+          return false;
+      }
+      else if (emailkh != "" && emailkh != null && (atposition < 1 || dotposition < (atposition + 2) || (dotposition + 2) >= emailkh.length)) {
+          alert("Email khách hàng không hợp lệ! Vui lòng nhập lại!");
+          return false;
+      }
+      else if (mkkh == null || mkkh == "") {
+          alert("Mật khẩu khách hàng không được để trống! Vui lòng nhập lại!");
+          return false;
+      }
+      else if (mkkh1 == null || mkkh1 == "") {
+          alert("Mật khẩu xác nhận khách hàng không được để trống! Vui lòng nhập lại!");
+          return false;
+      }
+      else if (mkkh != mkkh1) {
+          alert("Mật khẩu khách hàng không khớp! Vui lòng nhập lại!");
+          return false;
+      }
+      else if (diachikh == null || diachikh == "") {
+          alert("Địa chỉ khách hàng không được để trống! Vui lòng nhập lại!");
+          return false;
+      }
+      else if (codesubmit == null || codesubmit == "") {
+          alert("Mã xác nhận không được để trống! Vui lòng nhập lại!");
+          return false;
+      }
+
+      console.log("AddCustomer");
+      if (list == null) list = [];
+      var customer = {
+          "makh": makh,
+          "tenkh": tenkh,
+          "sdtkh": sdtkh,
+          "emailkh": emailkh,
+          "diachikh": diachikh,
+          "mkkh": mkkh
+      };
+      list.push(customer);
+      localStorage.setItem("Customer", JSON.stringify(list));
+      alert("Đăng ký thành công!");
+      location.reload();
+  }
+</script>
+</section>
+</section>
         <a href="login.html" class="signup__registerButton"
-          >Tạo tài khoản mới</a
+          >Đã có tài khoản</a
         >
       </div>
     </div>
