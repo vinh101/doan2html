@@ -259,7 +259,7 @@ const dayname = ['CN','T2','T3','T4','T5','T6','T7'];
                     else
                     {
                       $('#s_sdt').html('*');
-                      
+                      alert("Đặt hàng thành công!");
                            //Print
                             var str = `
                             <section style="text-align: center;">
