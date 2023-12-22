@@ -19,14 +19,14 @@ function LoadUser() {
     // $('#mknv').html(x.mknv);
 }
 
-// function TTTaiKhoan() {
-//     window.location.href = "../admin/TTTaiKhoan.html";
-// }
-
-function LogOut() {
-    localStorage.setItem('user', null);
-    window.location.href = "../admin/login.html";
+function TTTaiKhoan() {
+    window.location.href = "./TTTaiKhoan.html";
 }
+
+// function LogOut() {
+//     localStorage.setItem('user', null);
+//     window.location.href = "./dangnhap.html";
+// }
 
 function TongQuan() {
     window.location.href = "./quantri.html";
@@ -65,7 +65,7 @@ function TinTuc() {
 }
 
 function ThietLap() {
-    window.location.href = "./ThietLap.html";
+    window.location.href = "./TTTaiKhoan.html";
 }
 
 

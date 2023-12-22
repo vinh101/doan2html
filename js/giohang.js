@@ -273,6 +273,7 @@ const dayname = ['CN','T2','T3','T4','T5','T6','T7'];
                             <div>Số điện thoại : `+sdt+`</div>
                             <div>Email : `+email+`</div>
                             <div>Địa chỉ : `+ address +` - Tỉnh  `+ tinh +`</div>
+                            <div>Ngày giao hàng :Từ ngày 11 đến 13-1-2024</div>
                             <table style="width: 100%;text-align:left">
                                 <tr>
                                     <th>STT</th>

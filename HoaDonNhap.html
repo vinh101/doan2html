@@ -94,7 +94,28 @@
                                     </select>
                                 </div>
                                 <div class="col-12 col-s-12 padding-box">
-                                    <label for="txtright">Tổng sản phẩm:</label>
+                                    <label for="txtright">Mã sản phẩm:</label>
+                                </div>
+                                <div class="col-12 col-s-12 padding-box">
+                                    <select name="loaisp" id="loaisp">
+                                        <option value="choose">--Chọn sản phẩm--</option>
+                                        <option value="Đồng hồ Rolex cơ">Đồng hồ Rolex cơ</option>
+                                        <option value="Đồng hồ điện tử">Đồng hồ điện tử</option>
+                                        <option value="Đồng hồ A S Max">Đồng hồ A S Max</option>
+                                        <option value="Đồng hồ chống nước">Đồng hồ chống nước</option>
+                                        <option value="Đồng hồ thợ lặn">Đồng hồ thợ lặn</option>
+                                        <option value="Đồng hồ vận động viên">Đồng hồ vận động viên</option>
+                                        <option value="Linh kiện đồng hồ">Linh kiện đồng hồ</option>
+                                        <option value="Dây đồng hồ">Dây đồng hồ</option>
+                                        <option value="Kim đồng hồ">Kim đồng hồ</option>
+                                        <option value="Phụ tùng đồng hồ">Phụ tùng đồng hồ</option>
+                                        <option value="Pin đồng hồ mini">Pin đồng hồ mini</option>
+                                        <option value="Pin đồng hồ tròn">Pin đồng hồ tròn</option>
+                                        <option value="Tai Nghe">Tai Nghe</option>
+                                        <option value="Dây sạc">Dây sạc</option>
+                                        
+                                        <option value="Phụ Kiện Khác">Phụ Kiện Khác</option>
+                                    </select>
                                 </div>
                                 <div class="col-12 col-s-12 padding-box">
                                     <input type="number" id="tongsanpham" placeholder="Nhập số lượng...">
@@ -147,7 +168,7 @@
                                             <th>Mã HDN</th>
                                             <th>Nhân viên</th>
                                             <th>Nhà cung cấp</th>
-                                            <th>Tổng sản phẩm</th>
+                                            <th>Sản phẩm</th>
                                             <th>Tổng tiền</th>
                                             <th>Ngày tạo</th>
                                             <th>Thao tác</th>
@@ -227,7 +248,7 @@
                 var mahd = document.getElementById("mahd").value;
                 var nhanviennhap = document.getElementById("nhanviennhap").value;
                 var nhacungcap = document.getElementById("nhacungcap").value;
-                var tongsanpham = document.getElementById("tongsanpham").value;
+                var loaisp = document.getElementById("loaisp").value;
                 var tongtien = document.getElementById("tongtien").value;
                 var ghichu = document.getElementById("ghichu").value;
                 var ngaytao;
@@ -250,11 +271,8 @@
                     alert("Vui lòng chọn nhà cung cấp!");
                     return false;
                 }
-                else if (tongsanpham == null || tongsanpham == "") {
-                    alert("Số lượng sản phẩm không được để trống! Vui lòng nhập lại!");
-                    return false;
-                } else if (tongsanpham < 0) {
-                    alert("Số lượng sản phẩm phải lớn hơn hoặc bằng 0! Vui lòng nhập lại!");
+                if (loaisp == "choose") {
+                    alert("Vui lòng chọn loại sản phẩm!");
                     return false;
                 }
                 else if (tongtien == null || tongtien == "") {
@@ -283,7 +301,7 @@
                     "mahd": mahd,
                     "nhanviennhap": nhanviennhap,
                     "nhacungcap": nhacungcap,
-                    "tongsanpham": tongsanpham,
+                    "loaisp": loaisp,
                     "tongtien": tongtien,
                     "ghichu": ghichu,
                     "ngaytao": ngaytao
@@ -298,7 +316,7 @@
                 document.getElementById('mahd').value = '';
                 document.getElementById('nhanviennhap').value = 'choose';
                 document.getElementById('nhacungcap').value = 'choose';
-                document.getElementById('tongsanpham').value = '';
+                document.getElementById('loaisp').value = 'choose';
                 document.getElementById('tongtien').value = '';
                 document.getElementById('ghichu').value = '';
                 document.getElementById('ngaytao').value = '';
@@ -317,7 +335,7 @@
                             <td>`+ x.mahd + `</td>
                             <td>`+ x.nhanviennhap + `</td>
                             <td>`+ x.nhacungcap + `</td>
-                            <td style="text-align: center;">`+ x.tongsanpham + `</td>
+                            <td style="text-align: center;">`+ x.loaisp + `</td>
                             <td style="text-align: right;">`+ x.tongtien + `</td>
                             <td style="text-align: center;">`+ x.ngaytao + `</td>
                             <td style="text-align: center;">

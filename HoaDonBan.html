@@ -101,10 +101,17 @@
                                     <input type="tel" id="diachikh" placeholder="Nhập địa chỉ...">
                                 </div>
                                 <div class="col-12 col-s-12 padding-box">
-                                    <label for="txtright">Tổng sản phẩm:</label>
+                                    <label for="txtright">Trạng thái:</label>
                                 </div>
                                 <div class="col-12 col-s-12 padding-box">
-                                    <input type="number" id="tongsanpham" placeholder="Nhập số lượng...">
+                                    <select name="loaitt" id="loaitt">
+                                        <option value="choose">--Chọn trạng thái đơn hàng--</option>
+                                        <option value="Đang vận chuyển">Đang vận chuyển</option>
+                                        <option value="Đang chờ hàng">Đang chờ hàng</option>
+                                        <option value="Đang giao hàng">Đồng giao hàng</option>
+                                        <option value="Hủy đơn">Hủy đơn</option>
+                                        <option value="Đang đóng hàng">Đang đóng hàng</option> 
+                                    </select>
                                 </div>
                                 <div class="col-12 col-s-12 padding-box">
                                     <label for="txtright">Tổng tiền:</label>
@@ -172,7 +179,7 @@
                                             <th>Số điện thoại</th>
                                             <th>Email</th>
                                             <th>Địa chỉ</th>
-                                            <th>Tổng sản phẩm</th>
+                                            <th>Trạng thái</th>
                                             <th>Tổng tiền</th>
                                             <th>Ngày tạo</th>
                                             <th>Thao tác</th>
@@ -256,7 +263,7 @@
                 var sdtkh = document.getElementById("sdtkh").value;
                 var emailkh = document.getElementById("emailkh").value;
                 var diachikh = document.getElementById("diachikh").value;
-                var tongsanpham = document.getElementById("tongsanpham").value;
+                var loaitt = document.getElementById("loaitt").value;
                 var tongtien = document.getElementById("tongtien").value;
                 var ghichu = document.getElementById("ghichu").value;
                 var ngaytao;
@@ -292,11 +299,8 @@
                     alert("Địa chỉ khách hàng không được để trống! Vui lòng nhập lại!");
                     return false;
                 }
-                else if (tongsanpham == null || tongsanpham == "") {
-                    alert("Số lượng sản phẩm không được để trống! Vui lòng nhập lại!");
-                    return false;
-                } else if (tongsanpham < 0) {
-                    alert("Số lượng sản phẩm phải lớn hơn hoặc bằng 0! Vui lòng nhập lại!");
+                if (loaitt == "choose") {
+                    alert("Vui lòng chọn trạng thái");
                     return false;
                 }
                 else if (tongtien == null || tongtien == "") {
@@ -327,7 +331,7 @@
                     "sdtkh": sdtkh,
                     "emailkh": emailkh,
                     "diachikh": diachikh,
-                    "tongsanpham": tongsanpham,
+                    "loaitt": loaitt,
                     "tongtien": tongtien,
                     "ghichu": ghichu,
                     "ngaytao": ngaytao
@@ -344,7 +348,7 @@
                 document.getElementById('sdtkh').value = '';
                 document.getElementById('emailkh').value = '';
                 document.getElementById('diachikh').value = '';
-                document.getElementById('tongsanpham').value = '';
+                document.getElementById('loaitt').value = 'choose';
                 document.getElementById('tongtien').value = '';
                 document.getElementById('ghichu').value = '';
                 document.getElementById('ngaytao').value = '';
@@ -365,7 +369,7 @@
                             <td>`+ x.sdtkh + `</td>
                             <td>`+ x.emailkh + `</td>
                             <td>`+ x.diachikh + `</td>
-                            <td style="text-align: center;">`+ x.tongsanpham + `</td>
+                            <td style="text-align: center;">`+ x.loaitt + `</td>
                             <td style="text-align: right;">`+ x.tongtien + `</td>
                             <td style="text-align: center;">`+ x.ngaytao + `</td>
                             <td style="text-align: center;">
